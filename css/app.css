@@ -1,0 +1,80 @@
+
+.parallax-container
+{
+  overflow: visible;
+}
+  .seccion {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      height: 900px;
+  }
+  video#video
+  {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(home.jpg) no-repeat;
+    background-size: cover;
+  }
+  .logo
+  {
+    width: 200px;
+    transition: width .5s;
+  }
+
+  .contenido
+  {
+    margin-top: 200px;
+  }
+.cabecera
+{
+
+  background: transparent;
+  box-shadow: none;
+}
+.parallax-container {
+      height: 800px;
+    }
+
+    .pequenio
+    {
+      width: 0;
+    }
+
+.division
+{
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+#fest2016{background: #EF5350 !important;}
+#memorias{background: #AB47BC;}
+#sponsors{background: #42A5F5;}
+#contacto{background: #26A69A;}
+@font-face {
+    font-family: 'GrundschriftBold';
+    src: url('../media/Grundschrift-Bold.otf');
+}
+
+body {
+    font-family: 'GrundschriftBold';
+   font-weight: bold;
+   font-style: normal;
+   letter-spacing: 1px;
+}
+
+.valign-wrapper .valign {
+    display: block;
+    margin: auto;
+}
