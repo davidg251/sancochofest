@@ -3,37 +3,18 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
-    
+    <meta name="description" content="El Sancocho Fest es un espacio multiartístico y cultural en el que convergen diversas expresiones que pueden ser apreciadas por el público de manera gratuita">
+    <meta name="keywords" content="sancocho fest,festival,multicultural,tulua">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/app.css">
-    <style>.spinner {width: 60px;height: 60px;margin: 25% auto;background-color:orange;z-index: 999;
-      border-radius: 100%;
-      -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-      animation: sk-scaleout 1.0s infinite ease-in-out;}
-@-webkit-keyframes sk-scaleout {
-  0% { -webkit-transform: scale(0) }
-  100% {
-    -webkit-transform: scale(1.0);
-    opacity: 0;
-  }
-}
-@keyframes sk-scaleout {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  } 100% {
-    -webkit-transform: scale(1.0);
-    transform: scale(1.0);
-    opacity: 0;
-  }
-}</style>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>.spinner {width: 60px;height: 60px;margin: 25% auto;margin-bottom: 0;background-color:orange;z-index: 999;border-radius: 100%;-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;animation: sk-scaleout 1.0s infinite ease-in-out;}
+  @-webkit-keyframes sk-scaleout {0% { -webkit-transform: scale(0) }100% {-webkit-transform: scale(1.0);opacity: 0;}}
+@keyframes sk-scaleout {0% {-webkit-transform: scale(0);transform: scale(0);} 100% {-webkit-transform: scale(1.0);transform: scale(1.0);opacity: 0;}}</style>
   </head>
-  <div class="loader" style="  z-index: 999;
-    width: 100%;
-    height: 100%;
-    background: #123;
-    position: fixed;"><div class="spinner"></div><div style="z-index: 999;color:#fff;margin: 35% auto;">Cargando</div></div>
+  <div class="loader" style="z-index: 999;width: 100%;height: 100%;background:#fafafa;position: fixed;"><div class="spinner"></div><div style="width:80px;z-index: 999;color:#212121;margin: 0 auto;">CARGANDO...</div></div>
   <body>
+
     <div class="navbar-fixed">
       <nav class="cabecera">
         <div class="cabecera nav-wrapper">
@@ -70,6 +51,7 @@
       </nav>
     </div>
 
+
     <div id="home" class="parallax-container">
       <div class="parallax">
         <video autoplay loop poster="home.jpg" id="video" muted><!--falta imagen alternativa-->
@@ -79,34 +61,208 @@
       </div>
     </div>
      <div id="fest2016" class="seccion white-text">
-       <div class="row container contenido">
-         <h2 class="header">FEST 2016</h2>
-         <p class="white-text text-darken-3 lighten-3">fest 2016 , todo : 1.slider, modal</p>
-
-
+         <div class="row container contenido">
+           <!---<h2 class="header center-align">FEST 2016</h2>-->
+           <p class="fluid-text white-text text-darken-3 lighten-3">
+             Gran descripcion del sancocho
+           </p>
+            <div class="col l6 m6 s12">
+             <div class="slider">
+              <ul class="slides">
+                <li>
+                  <img src="http://placehold.it/150/150/">
+                  <div class="caption center-align">
+                    <h3>GRUPO1</h3>
+                    <h5 class="light grey-text text-lighten-3">CIUDAD</h5>
+                  </div>
+                </li>
+                <li>
+                  <img src="http://placehold.it/150/150/">
+                  <div class="caption center-align">
+                    <h3>GRUPO2</h3>
+                    <h5 class="light grey-text text-lighten-3">CIUDAD</h5>
+                  </div>
+                </li>
+                <li>
+                  <img src="http://placehold.it/150/150/">
+                  <div class="caption center-align">
+                    <h3>GRUPO3</h3>
+                    <h5 class="light grey-text text-lighten-3">CIUDAD</h5>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            </div>
+            <div class="col l6 m6 s12">
+              <div class="card white black-text">
+                <div class="card-content">
+                  <table class="centered-table">
+                  <thead>
+                    <tr>
+                        <th data-field="id">Actividad</th>
+                        <th data-field="name">Responsable</th>
+                        <th data-field="price">Lugar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Actividad</td>
+                      <td>Responsable</td>
+                      <td>Un lugar</td>
+                    </tr>
+                    <tr>
+                      <td>Actividad</td>
+                      <td>Responsable</td>
+                      <td>Un lugar</td>
+                    </tr>
+                    <tr>
+                      <td>Actividad</td>
+                      <td>Responsable</td>
+                      <td>Un lugar</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>
+                  <a class="btn waves center">Descargar Programacion</a>
+                </p>
+              </div>
+            </div>
+         </div>
        </div>
-     </div>
+      </div>
 
      <div id="memorias" class="seccion white-text">
        <div class="row container contenido">
          <h2 class="header">MEMORIAS</h2>
-         <p class="white-text text-darken-3 lighten-3">memorias : todo : 1.slider con imagenes. ampliar al click</p>
+         <p class="white-text text-darken-3 lighten-3">Una descripcion del/los sancochos</p>
+         <div class="row">
+           <div class="col s12">
+             <ul class="tabs">
+               <li class="tab col s3"><a href="#test1">2013</a></li>
+               <li class="tab col s3"><a class="active" href="#test2">2014</a></li>
+               <li class="tab col s3"><a href="#test3">2015</a></li>
+             </ul>
+           </div>
+           <div id="test1" class="col s12">
+             <div class="row">
+               <div class="col l2 m2 s2"><img class="materialboxed responsive-img"src="http://placehold.it/500x500"></img></div>
+                <div class="col l2 m2 s2"><img class="materialboxed responsive-img"src="http://placehold.it/500x500"></img></div>
+                 <div class="col l2 m2 s2"><img class="materialboxed responsive-img"src="http://placehold.it/500x500"></img></div>
+
+
+             </div>
+           </div>
+           <div id="test2" class="col s12">
+             <div class="row">
+               <div class="col l2 m2 s2"><img class="materialboxed responsive-img"src="http://placehold.it/500x500"></img></div>
+                <div class="col l2 m2 s2"><img class="materialboxed responsive-img"src="http://placehold.it/500x500"></img></div>
+                 <div class="col l2 m2 s2"><img class="materialboxed responsive-img"src="http://placehold.it/500x500"></img></div>
+             </div>
+           </div>
+
+           <div id="test3" class="col s12">
+             <div class="row">
+             <div class="col l2 m2 s2"><img class="materialboxed responsive-img"src="http://placehold.it/500x500"></img></div>
+              <div class="col l2 m2 s2"><img class="materialboxed responsive-img"src="http://placehold.it/500x500"></img></div>
+               <div class="col l2 m2 s2"><img class="materialboxed responsive-img"src="http://placehold.it/500x500"></img></div>
+             </div>
+           </div>
+         </div>
+        </div>
+
+
+
        </div>
      </div>
 
      <div id="sponsors" class="seccion white-text">
-       <div class="row container contenido">
-         <h2 class="header">SPONSORS</h2>
-         <p class="white-text text-darken-3 lighten-3">sponsor:todo:1.imagenes redondeadas parrafo agradecimientos</p>
+       <div class="row container contenido ">
+         <h2 class="header center-align">SPONSORS</h2>
+
+         <div class="row">
+          <div class="col l3 m3 s3"><img class="responsive-img"  src="http://placehold.it/150x150"></div>
+          <div class="col l3 m3 s3"><img  class="responsive-img" src="http://placehold.it/150x150"></div>
+          <div class="col l3 m3 s3"><img class="responsive-img"  src="http://placehold.it/150x150"></div>
+          <div class="col l3 m3 s3"><img  class="responsive-img" src="http://placehold.it/150x150"></div>
+         </div>
+         <div class="row">
+           <div class="col l2 m2 s2"><img class="responsive-img"  src="http://placehold.it/150x150"></div>
+           <div class="col l2 m2 s2"><img  class="responsive-img" src="http://placehold.it/150x150"></div>
+           <div class="col l2 m2 s2"><img class="responsive-img"  src="http://placehold.it/150x150"></div>
+           <div class="col l2 m2 s2"><img  class="responsive-img" src="http://placehold.it/150x150"></div>
+           <div class="col l2 m2 s2"><img  class="responsive-img" src="http://placehold.it/150x150"></div>
+           <div class="col l2 m2 s2"><img  class="responsive-img" src="http://placehold.it/150x150"></div>
+
+         </div>
+         <div class="center-align row">
+           <h4 class="">Agradecimientos</h4>
+           <p>Persona1 - Persona2 - Persona3- Persona4- Persona5-
+           Persona6- Persona7- Persona8- Persona9</p>
+         </div>
        </div>
      </div>
 
      <div id="contacto" class="seccion white-text">
-       <div class="row container contenido">
-         <h2 class="header">CONTACTO</h2>
-         <p class="white-text text-darken-3 lighten-3">contacto:todo:1. forma de contacto, sociales, link a blog,2. falta hacr el backend para recibir la forma</p>
-       </div>
+       <div class="container ">
+         <div class="row contenido">
+           <h2 class="center grey-text text-lighten-4 gray-text center">CONTACTO</h2>
+           <div class="col l8 m8 center">
+             <form >
+                   <div class="card">
+                       <div class="card-content black-text">
+
+                       <div class="row">
+                           <div class="input-field col s6">
+                             <input  id="nombre" type="text" class="validate">
+                             <label for="first_name">Nombre</label>
+                           </div>
+                           <div class="input-field col s6">
+                             <input id="correo" type="text" class="validate">
+                             <label for="correo">Correo</label>
+                           </div>
+                     </div>
+                     <div class="row">
+                       <div class="input-field col s12">
+                           <textarea id="cuentanos" type="text" class="validate materialize-textarea"></textarea>
+                         <label for="cuentanos">Cuentanos</label>
+                       </div>
+                     </div>
+                       <button class="waves-effect waves-light btn-large orange accent-3" type="submit" name="action">Enviar</button>
+                   </div>
+               </div>
+           </form>
+         </div>
+           <div class="col l4 m4 center">
+             <h5>Correo Electronico</h5>
+             <p>asdfgfgh@sancocho.co</p>
+             <h5>Numero Telefonico</h5>
+             <p>+5745821258</p>
+             <h5>Siguenos</h5>
+             <p>
+              <a class="btn-floating btn-large waves-effect waves-light blue"></a>
+              <a class="btn-floating btn-large waves-effect waves-light red"></a>
+              <a class="btn-floating btn-large waves-effect waves-light blue"></a>
+             </p>
+             <h5>Organiza</h5>
+             <p>
+               <ul>
+                 <li>Fundacion 1</li>
+                 <li>Grupo 1</li>
+                 <li>Grupo 2</li>
+             </ul>
+             </p>
+           </div>
+        </div>
+
+
+          <div class="container">
+            <div class="row">
+
+           </div>
+         </div>
+
      </div>
+   </div>
 
 
 

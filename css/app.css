@@ -1,12 +1,32 @@
+html, body { height: 100%; }
+@font-face {
+    font-family: 'GrundschriftBold';
+    src: url('../media/Grundschrift-Bold.otf');
+}
 
+
+.slider .indicators .indicator-item {
+    height: 8px;
+    width: 8px;
+
+    background-color: #FFFFFF
+  }
 .parallax-container
 {
   overflow: visible;
 }
+
   .seccion {
       padding-top: 1rem;
       padding-bottom: 1rem;
-      height: 900px;
+      height: 100%;
+      max-height: 1503px;
+  }
+
+  #sponsors img
+  {
+    border-radius: 100%;
+
   }
   video#video
   {
@@ -20,7 +40,7 @@
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(home.jpg) no-repeat;
+    background: url('img/home.jpg') no-repeat;
     background-size: cover;
   }
   .logo
@@ -28,10 +48,15 @@
     width: 200px;
     transition: width .5s;
   }
+/********/
 
+/*PILAAAAAASSS*/
+
+
+/**********/
   .contenido
   {
-    margin-top: 200px;
+    margin-top: 83px;/*causa problemas en moviles y tablets*/
   }
 .cabecera
 {
@@ -41,6 +66,7 @@
 }
 .parallax-container {
       height: 800px;
+
     }
 
     .pequenio
@@ -61,14 +87,10 @@
 #fest2016{background: #EF5350 !important;}
 #memorias{background: #AB47BC;}
 #sponsors{background: #42A5F5;}
-#contacto{background: #26A69A;}
-@font-face {
-    font-family: 'GrundschriftBold';
-    src: url('../media/Grundschrift-Bold.otf');
-}
+#contacto{background: #26A691;}
 
 body {
-    font-family: 'GrundschriftBold';
+  font-family: 'GrundschriftBold';
    font-weight: bold;
    font-style: normal;
    letter-spacing: 1px;
@@ -78,3 +100,28 @@ body {
     display: block;
     margin: auto;
 }
+
+.davimba
+{
+  bottom: 2px;
+  font-family: monospace;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+.seccion
+{
+  height: initial;
+}
+}
+
+.tabs .indicator {
+
+    background-color: #9E9E9E;
+
+}
+
+.tabs .tab a {
+    color: #464646;
+  }

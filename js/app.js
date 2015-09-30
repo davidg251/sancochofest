@@ -1,13 +1,18 @@
 $(window).load(function() {
 
     $(".loader").fadeOut("slow");
+
     $( document ).ready(function(){
 
 
-      $('.button-collapse').sideNav({
-          menuWidth: 500, // Default is 240
+      $('.slider').slider({
+        interval:2500
+      });
+      $('.materialboxed').materialbox();
 
-          closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      $('.button-collapse').sideNav({
+          menuWidth: 500,
+          closeOnClick: true
         }
       );
        $('.parallax').parallax();
@@ -17,7 +22,7 @@ $(window).load(function() {
              shrinkOn = 400,
              header = $('#logo')
          if (distanceY > shrinkOn) {
-             $('#logo').addClass('pequenio');
+             $('#logo').addClass('pequenio')
          } else {
              if ( $('#logo').hasClass('pequenio')) {
                   $('#logo').removeClass('pequenio')
