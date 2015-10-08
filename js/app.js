@@ -38,10 +38,6 @@ $(window).load(function() {
      $('a[href^="#"]').on('click',function (e) {
           e.preventDefault();
           var target = this.hash;
-          if(target == "#2013" || target == "#2014" || target == "#2015")
-          {
-            return;
-          }
           var $target = $(target);
           $('html, body').stop().animate({
               'scrollTop': $target.offset().top
@@ -54,6 +50,8 @@ $(window).load(function() {
       $( '#2013').mouseenter( function(){  $(this)[0].src = 'img/color2013.png';} ).mouseleave( function(){  $(this)[0].src = 'img/bn2013.png';});
       $( '#2014').mouseenter( function(){  $(this)[0].src = 'img/color2014.png';} ).mouseleave( function(){  $(this)[0].src = 'img/bn2014.png';});
       $( '#2015').mouseenter( function(){  $(this)[0].src = 'img/color2014.png';} ).mouseleave( function(){  $(this)[0].src = 'img/bn2014.png';});
+
+
       $('#enviar-formulario').click(function(){
         nombre = $('#nombre')[0].value;
         correo = $('#correo')[0].value;
@@ -61,20 +59,28 @@ $(window).load(function() {
 
         if(nombre === '' || correo === '' || mensaje === '' )
         {
-          $('#error').addClass('visible');
-          return;
-        }
-        /*$.post('php/contacto.php',
-          {
+          $('#error').removeClass('hide');
 
+          return;
+        }else{
+        $.post('mail.php',
+          {
+            nombre : nombre,
+            correo : correo,
+            mensaje : mensaje,
           },
           function(data, status){
               alert("Data: " + data + "\nStatus: " + status);
+              console.log(data);
           }
-        );*/
+        );
 
-
+      }
       });
+
+
+
+
 
     });
 
