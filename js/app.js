@@ -11,6 +11,10 @@ $(window).load(function() {
 
      }, 10);
 
+        $(document).ready(function(){
+  
+    });
+       
 
 
  var a = $( window ).height();
@@ -32,12 +36,12 @@ $(window).load(function() {
          if (distanceY > shrinkOn) {
 
              $('#menu').removeClass('enlaces-trans')
-
+             $('#logo').css("display", "none")
          } else {
              if ( ! $('#menu').hasClass('enlaces-trans')) {
 
                   $('#menu').addClass('enlaces-trans')
-
+                  $('#logo').css("display", "initial")
              }
 
          }

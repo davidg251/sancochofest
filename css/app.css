@@ -1,8 +1,18 @@
-html, body { height: 100%; font-family: 'Passero One', 'cursive;', sans-serif;font-weight: 600;}
+html, body { height: 100%; font-family: 'Maxwell', sans-serif;font-weight: 600;}
 @font-face {
-    font-family: 'GrundschriftBold';*/
+    font-family: 'GrundschriftBold';
     src: url('../media/Grundschrift-Bold.otf');
 }
+@font-face {
+    font-family: 'Maxwell';
+    src: url('../font/MAXWELL REGULAR.ttf');
+}
+@font-face {
+    font-family: 'Maxwell Bold';
+    src: url('../font/MAXWELL BOLD.ttf');
+}
+
+
 nav,h1,h2,h3,h4,h5
 {
   letter-spacing: 1px;
@@ -36,29 +46,15 @@ margin-bottom: 15px;
     transition: .4s opacity ease-in;
   }
 
-  video#video
-  {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url('img/home.jpg') no-repeat;
-    background-size: cover;
-  }
   .logo
   {
-    width: 316px;
+    width: 100px;
     transition: width .5s;
+    margin: 0 50px;
   }
   .contenido
   {
-    margin-top: 83px;/*causa problemas en moviles y tablets*/
+    margin-top: 40px;
   }
 .cabecera
 {
@@ -86,10 +82,10 @@ margin-bottom: 15px;
   margin-bottom: 2px;
 }
 
-#fest2016{background: #00b8e1 ;background-image: url('../img/trama-sancocho.png') ;}
-#memorias{background: #ed1a33;background-image: url('../img/trama-sancocho.png') ;}
-#sponsors{background: #42A5F5;background-image: url('../img/trama-sancocho.png') ;}
-#contacto{color:#761714 !important;background: #ffb600;background-image: url('../img/trama-sancocho.png') ;}
+#fest2016{margin-top:-40px;background: #00b8e1 ;/*background-image: url('../img/trama-sancocho.png') ;*/}
+#memorias{background: #ff8a80;/*background-image: url('../img/trama-sancocho.png') ;*/}
+#sponsors{background: #42A5F5;/*background-image: url('../img/trama-sancocho.png') ;*/}
+#contacto{color:#761714 !important;background: #ffb600;/*background-image: url('../img/trama-sancocho.png') ;*/}
 .valign-wrapper .valign {
     display: block;
     margin: auto;
@@ -171,6 +167,8 @@ margin-left: 15px;
 position: relative;
 overflow: hidden;
 transition: 1.7s !important;
+  margin-top: 31px;
+ 
 }
 .enlace{color:black;opacity:0;left:0;top:0;}
  .color{
@@ -222,6 +220,7 @@ a[href="#contacto"]{background-color:#00aa88;}
 {
   background: transparent !important;
   line-height: 64px;
+  margin-top: 36px;
 }
 
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
@@ -328,4 +327,81 @@ bottom: -61px;
 {
   width: 80%;
   margin: auto !important;
+}
+
+
+#home{
+  margin-top: -64px;
+}
+
+
+.slider .indicators {
+
+    bottom: 60px;
+    z-index: 999;
+}
+
+.slider .slides li .caption {
+
+    top: 25%;
+   
+}
+
+.tabs {
+
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 21px;
+}
+
+.tabs .tab a {
+  color: #fff;
+  }
+
+    body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .proteccion
+  {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#939393+34,dbdbdb+100&0.65+19,0+100 */
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(bottom, rgba(39, 39, 39, 0.53) , transparent); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom, rgba(39, 39, 39, 0.53), transparent); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom, rgba(39, 39, 39, 0.53), transparent); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom, rgba(39, 39, 39, 0.53) , transparent); /* Standard syntax */
+  }
+
+  #menugrande
+  {
+   
+  }
+
+  .slider .slides li .caption.left-align
+ 
+  {
+    width: 50%;
+  }
+
+  .tabs .tab .active
+  {
+    font-size: 25px;
+  }
+
+  .slider .indicators .indicator-item.active {
+    background-color: #18ffff;
+}
+
+.slider .indicators .indicator-item {
+
+    background-color: rgba(224, 224, 224, 0);
+
+    border: 2px solid #fff;
 }

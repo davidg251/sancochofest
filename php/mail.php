@@ -9,7 +9,7 @@ $mensaje = $_POST['mensaje'];
 $para   = 'david@sancochofest.co';
 
 
-
+/**/
 $cabeceras = 'From:'. $correo . "\r\n" .
     'Reply-To: david@sancochofest.co' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();

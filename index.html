@@ -4,27 +4,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
     <meta name="description" content="El Sancocho Fest es un espacio multiartístico y cultural en el que convergen diversas expresiones que pueden ser apreciadas por el público de manera gratuita">
-    <meta name="keywords" content="sancocho fest,festival,multicultural,tulua">
+    <meta name="keywords" content="sancocho fest,festival,multicultural,tulua, valle del cauca, musica">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/app.css">
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Passero+One' rel='stylesheet' type='text/css'>
     <style>.spinner {width: 60px;height: 60px;margin: 25% auto;margin-bottom: 0;background-color:orange;z-index: 999;border-radius: 100%;-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;animation: sk-scaleout 1.0s infinite ease-in-out;}
   @-webkit-keyframes sk-scaleout {0% { -webkit-transform: scale(0) }100% {-webkit-transform: scale(1.0);opacity: 0;}}
 @keyframes sk-scaleout {0% {-webkit-transform: scale(0);transform: scale(0);} 100% {-webkit-transform: scale(1.0);transform: scale(1.0);opacity: 0;}}</style>
   </head>
   <div class="loader" style="z-index: 999;width: 100%;height: 100%;background:#fafafa;position: fixed;"><div class="spinner"></div><div style="width:80px;z-index: 999;color:#212121;margin: 0 auto;">CARGANDO...</div></div>
   <body>
-
+  <main>
     <div class="navbar-fixed">
       <nav id="menu" class="cabecera  enlaces-trans">
         <div class="cabecera nav-wrapper">
 
           <a href="#" data-activates="mobil" class="button-collapse"><i class="material-icons">menu</i></a>
-          <div class="valign-wrapper">
+          <div class="proteccion valign-wrapper">
             <!--<a class="hide-on-med-and-down"><img id="logo2" class="invisible logo2 left" src="img/logo2.png"/></a>-->
+            <ul class="left">
+            </ul>
+
             <ul id="menugrande" class=" valign hide-on-med-and-down">
+              <li id="logo" ><a class="item-menu"><img class="logo responsive-img" src="img/logoBlanco.PNG"/></a></li>
 
               <li><a class="item-menu" href="#home">INICIO</a></li>
 
@@ -47,12 +49,41 @@
       </nav>
     </div>
 
-    <div id="home" class="parallax-container">
-      <div class="parallax">
-        <video autoplay loop poster="home.jpg" id="video" muted><!--falta imagen alternativa-->
-            <source src="media/2.webm" type="video/webm"><!--falta exportar formato-->
-            <source src="media/2.mp4" type="video/mp4">
-        </video>
+    <div id="home" class="">
+      <div class="">
+          <div class="slider">
+    <ul class="slides">
+          <li>
+        <img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10451053_895299717179705_3906904319995683263_n.jpg?oh=0ac94cf67f6f65b380e8dab319fa9cee&oe=57086D69&__gda__=1464281091_d1686c441f619ff8a0791d78e9bc3723"> <!-- random image -->
+        <div class="caption right-align">
+          <h1  class="joda cyan darken-4"><span class=" cyan darken-4">FALTAN 200 DIAS PA'L SANCOCHO</span></h>
+          <h5 class="light grey-text text-lighten-3 cyan accent-4">Mimi camelusa(ARG) / Rafael Ponde(BR) / Ryan Tennis / Open Mind Groove / Sólo Valencia / Petit Felas / El CaribeFunk</h5>
+        </div>
+    
+      <li>
+        <img src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xft1/v/t1.0-9/1908167_881959001847110_46192226912464326_n.jpg?oh=053396c8b70c97e4794cea7efbd0c5c2&oe=56FE0B7C"> <!-- random image -->
+        <div class="caption left-align">
+          <h1 class=" cyan darken-4"><span class=" cyan darken-4">ESCUELA DEL SANCOCHO</span></h1>
+           <h5 class="light grey-text text-lighten-3 cyan darken-3 ">Una forma de acercamos de una manera directa a la
+población incorporando nuevas formas de compartir saberes mediante
+talleres, clínicas artísticas y conversatorios</h5>
+        </div>
+      </li>
+        </li>
+      <li>
+        <img src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xta1/t31.0-8/10498078_881959035180440_4123235448693317470_o.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h1 ><span class=" cyan darken-4">¿ QUE ES EL SANCOCHO ?</span></h2>
+           <h5 class="light white-text cyan darken-3">Cada año, el Sancocho Fest reúne artistas,
+expositores y tallerístas nacionales e
+internacionales, para ofrecer a la
+comunidad de Tuluá y sus alrededores un
+espacio multiartístico de esparcimiento y
+entretenimiento</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
       </div>
     </div>
 
@@ -67,7 +98,6 @@
             </div>
             <p class="flow-text">
 
-
             El Sancocho Fest se ha convertido en un evento que cada año reune artistas, expositores y talleristas nacionales e internacionales; para ofrecer a la comunidad de Tuluá y sus alrededores, un espacio multiartistico de esparcimiento y entretenimiento, pero al mismo tiempo  de educación informal en los temas de interes ambiental y social.</p>
           </p>
 
@@ -81,20 +111,29 @@
          <div class="row">
          <h2 class="header right">MEMORIAS</h2>
         </div>
-         <div class="row row-memorias">
-          <div class="col l4 m4 s12">
 
-            <div class="container-poster hoverable" style="position: relative;">
+          <div class="col offset-l2  l8 m12 s12">
+            <ul class="tabs">
+              <li class="tab col s4"><a class="active" href="#2013">2013</a></li>
+              <li class="tab col s4"><a  href="#2014">2014</a></li>
+              <li class="tab col s4"><a href="#2015">2015</a></li>
+            </ul>
+          </div>
+         <div class="row row-memorias">
+          <div id="2013" class="col l12 m12 s12">
+
+            <div class="col l4 container-poster hoverable" style="position: relative;">
               <a href ="https://www.facebook.com/media/set/?set=a.1011591548883854.1073741834.707791069263905&type=3" target="_blank" ><img class="responsive-img bn" src="img/AMPF2013.png"/>
               <img class="responsive-img color" src="img/SelecAMPF2013.png"/>
             </a>
              </div>
-
-            <p >En su primera versión el Montando La Podrida Fest se caracterizó por fomentar el arte como herramienta educativa para la reconstrucción del tejido social a través de un festival en el que se promueven espacios gratuitos de aprendizaje, intercambio cultural y esparcimiento en diferentes disciplinas artísticas, mientras se aporta a la consolidación de una identidad cultural propia del municipio de Tuluá y al fortalecimiento de su proyección como foco turístico regional.</p>
+             <div class="container">
+            <p class="col l8 m8 flow-text" >En su primera versión el Montando La Podrida Fest se caracterizó por fomentar el arte como herramienta educativa para la reconstrucción del tejido social a través de un festival en el que se promueven espacios gratuitos de aprendizaje, intercambio cultural y esparcimiento en diferentes disciplinas artísticas, mientras se aporta a la consolidación de una identidad cultural propia del municipio de Tuluá y al fortalecimiento de su proyección como foco turístico regional.</p>
+            </div>
           </div>
-          <div class="pasados col l4 m4 s12">
+          <div id="2014" class="pasados col l12 m12 s12">
 
-            <div class="container-poster hoverable" style="position: relative;">
+            <div class="col l4 m4 container-poster hoverable" style="position: relative;">
               <a href="https://www.facebook.com/media/set/?set=a.758632190846459.1073741825.707791069263905&type=3" target="_blank">
                 <img class="responsive-img bn" src="img/AMPF2014.png"/>
                 <img class="responsive-img color" src="img/SelecAMPF2014.png"/>
@@ -102,17 +141,25 @@
 
              </div>
 
-            <p >En el segundo Montando La Podrida Fest, el festival amplió su visión para dar participación a diferentes disciplinas artísticas, con exposiciones, presentaciones, y talleres gratuitos para toda la comunidad; es así como se abrieron espacios para: 16 agrupaciones musicales, 5 performances, 2 obras de teatro, 5 talleres artísticos, 1 grupo de danza, 2 conversatorios, 2 clínicas, 2 proyecciones de cine, 1 exposición fotográfica, 8 stands artesanales y 1 muestra gastronómica por parte del mercado campesinos</p>
+            <p class="col l8 m8 flow-text">En el segundo Montando La Podrida Fest, el festival amplió su visión para dar participación a diferentes disciplinas artísticas, con exposiciones, presentaciones, y talleres gratuitos para toda la comunidad; es así como se abrieron espacios para: 16 agrupaciones musicales, 5 performances, 2 obras de teatro, 5 talleres artísticos, 1 grupo de danza, 2 conversatorios, 2 clínicas, 2 proyecciones de cine, 1 exposición fotográfica, 8 stands artesanales y 1 muestra gastronómica por parte del mercado campesinos</p>
           </div>
-          <div class="pasados col l4 m4 s12">
+          <div id="2015" class="pasados col l12 m12 s12">
+             <div class="hoverable col l4 m4" style="margin-top: 31px;">
+              
+              
+              <img class="responsive-img " src="img/SelecASF2015.png"/>
+            
+             </div>
 
-            <div class="container-poster hoverable" style="position: relative;">
+            <!--
+            <div class="container-poster hoverable col l4 m4" style="position: relative;">
               <a href="https://www.facebook.com/media/set/?set=a.881955378514139.1073741832.707791069263905&type=3" target="_blank">
               <img class="responsive-img bn" src="img/ASF2015.png"/>
               <img class="responsive-img color" src="img/SelecASF2015.png"/>
             </a>
              </div>
-            <p >Se amplio  el concepto del festival para convertirlo en un espacio de convivencia y esparcimiento que pueda incluir todo tipo de público; por tal motivo, el evento adquiere el nombre de “Sancocho Fest” con el que se pretende abarcar el propósito de dar a conocer en un mismo evento, múltiples propuestas artísticas y estéticas que susciten el crecimiento cultural de la región mientras promueven la inclusión social.</p>
+             -->
+            <p class="col l8 m8 flow-text" >Se amplio  el concepto del festival para convertirlo en un espacio de convivencia y esparcimiento que pueda incluir todo tipo de público; por tal motivo, el evento adquiere el nombre de “Sancocho Fest” con el que se pretende abarcar el propósito de dar a conocer en un mismo evento, múltiples propuestas artísticas y estéticas que susciten el crecimiento cultural de la región mientras promueven la inclusión social.</p>
           </div>
 
         </div>
@@ -122,7 +169,7 @@
     <div id="sponsors" class="seccion white black-text">
       <div class="row container contenido ">
         <div class="row">
-        <h2 class="header n left">SPONSORS</h2>
+        <h2 class="header  left">SPONSORS</h2>
       </div>
         <div class="row">
          <div class="col l3 m3 s3"><img class="responsive-img"  src="img/sponsors/1.jpg"></div>
@@ -190,7 +237,18 @@
           </div>
         </div>
       </div>
+       <footer class="transparent black-text page-footer">
+         
+          <div class="transparent grey-text footer-copyright">
+            <div class="container">
+            © 2016 Asociacion Montando la Podrida
+            <a class="grey-text  right" href="#!">Otros Links</a>
+            </div>
+          </div>
+        </footer>
     </div>
+    </main>
+    <!--
     <div class="logos-fijos logo-iz"><a href="#" accesskey=""><img class="responsive-img" src="img/Logo-AsociacionMP.png"/></a></div>
     <div class="logos-fijos logo-de"><a href="#" ><img class="responsive-img" src="img/Logo-SancochoFest.png"/></a></div>
     <div class="logos-social">
@@ -198,6 +256,7 @@
       <a href="https://www.youtube.com/channel/UCbqtA3pkeHviJpVEdyZ9Mkw" target="_blank" ><img class="responsive-img" src="img/yt.png"/></a>
       <a href="https://twitter.com/festsancocho" target="_blank" ><img class="responsive-img" src="img/tw.png"/></a>
     </div>
+    -->
    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
