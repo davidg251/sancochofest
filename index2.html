@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="description" content="El Sancocho Fest es un espacio multiartístico y cultural en el que convergen diversas expresiones que pueden ser apreciadas por el público de manera gratuita">
     <meta name="keywords" content="sancocho fest,festival,multicultural,tulua">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/app.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Passero+One' rel='stylesheet' type='text/css'>
     <style>.spinner {width: 60px;height: 60px;margin: 25% auto;margin-bottom: 0;background-color:orange;z-index: 999;border-radius: 100%;-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;animation: sk-scaleout 1.0s infinite ease-in-out;}
   @-webkit-keyframes sk-scaleout {0% { -webkit-transform: scale(0) }100% {-webkit-transform: scale(1.0);opacity: 0;}}
@@ -19,11 +19,12 @@
 
     <div class="navbar-fixed">
       <nav id="menu" class="cabecera  enlaces-trans">
-        <div class="cabecera nav-wrapper">
+        <div class="cabecera nav-wrapper menu-1">
 
           <a href="#" data-activates="mobil" class="button-collapse"><i class="material-icons">menu</i></a>
           <div class="valign-wrapper">
             <!--<a class="hide-on-med-and-down"><img id="logo2" class="invisible logo2 left" src="img/logo2.png"/></a>-->
+            <a href="#" ><img class="brand-logo responsive-img logo" src="img/logoBlanco.PNG"/></a>
             <ul id="menugrande" class=" valign hide-on-med-and-down">
 
               <li><a class="item-menu" href="#home">INICIO</a></li>
@@ -33,8 +34,8 @@
               <li><a class="item-menu"  href="#memorias">MEMORIAS</a></li>
 
               <li><a class="item-menu"  href="#sponsors">SPONSORS</a></li>
-
               <li><a class="item-menu" href="#contacto">CONTACTO</a></li>
+
             </ul>
           </div>
             <ul class="side-nav" id="mobil">
@@ -47,14 +48,44 @@
       </nav>
     </div>
 
+    <div class="slider">
+      <div class="protector">
+   <ul class="slides">
+     <li>
+       <img src="http://lorempixel.com/1280/250/nature/1"> <!-- random image -->
+       <div class="caption center-align">
+         <h3>This is our big Tagline!</h3>
+         <h5 class="light grey-text text-lighten-3">Slogan 1</h5>
+       </div>
+     </li>
+     <li>
+       <img src="http://lorempixel.com/1280/250/nature/2"> <!-- random image -->
+       <div class="caption left-align">
+         <h3>Left Aligned Caption</h3>
+         <h5 class="light grey-text text-lighten-3">Slogan 2</h5>
+       </div>
+     </li>
+     <li>
+       <img src="http://lorempixel.com/1280/250/nature/3"> <!-- random image -->
+       <div class="caption right-align">
+         <h3>Right Aligned Caption</h3>
+         <h5 class="light grey-text text-lighten-3">Slogan 4</h5>
+       </div>
+     </li>
+   </ul>
+ </div>
+ </div>
+    <!--
     <div id="home" class="parallax-container">
       <div class="parallax">
-        <video autoplay loop poster="home.jpg" id="video" muted><!--falta imagen alternativa-->
-            <source src="media/2.webm" type="video/webm"><!--falta exportar formato-->
+        <video autoplay loop poster="img/home.jpg" id="video" muted>
+            <source src="media/2.webm" type="video/webm">
             <source src="media/2.mp4" type="video/mp4">
         </video>
       </div>
     </div>
+  -->
+
 
      <div id="fest2016" class="seccion white-text">
          <div class="row container contenido">
@@ -63,7 +94,9 @@
               <h2 class="header left">FEST 2016</h2>
             </div>
             <div class="valign-wrapper">
-              <img class="valign responsive-img center img-fest-2016" src="img/5de7.png"/>
+              <div class="valign">
+              <img class="responsive-img center" src="img/5de7.png"/>
+            </div>
             </div>
             <p class="flow-text">
 
@@ -81,13 +114,12 @@
          <div class="row">
          <h2 class="header right">MEMORIAS</h2>
         </div>
-         <div class="row row-memorias">
+         <div class="row">
           <div class="col l4 m4 s12">
 
             <div class="container-poster hoverable" style="position: relative;">
-              <a href ="https://www.facebook.com/media/set/?set=a.1011591548883854.1073741834.707791069263905&type=3" target="_blank" ><img class="responsive-img bn" src="img/AMPF2013.png"/>
+              <img class="responsive-img bn" src="img/AMPF2013.png"/>
               <img class="responsive-img color" src="img/SelecAMPF2013.png"/>
-            </a>
              </div>
 
             <p >En su primera versión el Montando La Podrida Fest se caracterizó por fomentar el arte como herramienta educativa para la reconstrucción del tejido social a través de un festival en el que se promueven espacios gratuitos de aprendizaje, intercambio cultural y esparcimiento en diferentes disciplinas artísticas, mientras se aporta a la consolidación de una identidad cultural propia del municipio de Tuluá y al fortalecimiento de su proyección como foco turístico regional.</p>
@@ -95,10 +127,8 @@
           <div class="pasados col l4 m4 s12">
 
             <div class="container-poster hoverable" style="position: relative;">
-              <a href="https://www.facebook.com/media/set/?set=a.758632190846459.1073741825.707791069263905&type=3" target="_blank">
-                <img class="responsive-img bn" src="img/AMPF2014.png"/>
-                <img class="responsive-img color" src="img/SelecAMPF2014.png"/>
-            </a>
+              <img class="responsive-img bn" src="img/AMPF2014.png"/>
+              <img class="responsive-img color" src="img/SelecAMPF2014.png"/>
 
              </div>
 
@@ -107,10 +137,8 @@
           <div class="pasados col l4 m4 s12">
 
             <div class="container-poster hoverable" style="position: relative;">
-              <a href="https://www.facebook.com/media/set/?set=a.881955378514139.1073741832.707791069263905&type=3" target="_blank">
               <img class="responsive-img bn" src="img/ASF2015.png"/>
               <img class="responsive-img color" src="img/SelecASF2015.png"/>
-            </a>
              </div>
             <p >Se amplio  el concepto del festival para convertirlo en un espacio de convivencia y esparcimiento que pueda incluir todo tipo de público; por tal motivo, el evento adquiere el nombre de “Sancocho Fest” con el que se pretende abarcar el propósito de dar a conocer en un mismo evento, múltiples propuestas artísticas y estéticas que susciten el crecimiento cultural de la región mientras promueven la inclusión social.</p>
           </div>
@@ -169,17 +197,17 @@
                            <div class="input-field col m6 s6 l6">
 
                              <input   id="nombre" type="text" class="validate">
-                             <label for="nombre">Nombre</label>
+                             <label for="nombre">First Name</label>
                            </div>
                            <div class="input-field col s6 l6 m6">
                              <input  id="correo" type="email" class="validate">
-                             <label for="correo">Correo</label>
+                             <label for="correo">First Name</label>
                            </div>
                      </div>
                      <div class="row">
                        <div class="input-field col s12 m12 s12">
                            <textarea  id="mensaje" type="text" class="validate materialize-textarea"></textarea>
-                           <label for="mensaje">Mensaje</label>
+                           <label for="mensaje">First Name</label>
                        </div>
                      </div>
                        <button id="enviar-formulario" class=" btn-large " type="submit">Enviar</button>
@@ -191,12 +219,11 @@
         </div>
       </div>
     </div>
-    <div class="logos-fijos logo-iz"><a href="#" accesskey=""><img class="responsive-img" src="img/Logo-AsociacionMP.png"/></a></div>
-    <div class="logos-fijos logo-de"><a href="#" ><img class="responsive-img" src="img/Logo-SancochoFest.png"/></a></div>
+
     <div class="logos-social">
-      <a href="https://www.facebook.com/sancochofest" target="_blank"><img class="responsive-img" src="img/fb.png"/></a>
-      <a href="https://www.youtube.com/channel/UCbqtA3pkeHviJpVEdyZ9Mkw" target="_blank" ><img class="responsive-img" src="img/yt.png"/></a>
-      <a href="https://twitter.com/festsancocho" target="_blank" ><img class="responsive-img" src="img/tw.png"/></a>
+      <a href="#" ><img class="responsive-img" src="img/facebook.png"/></a>
+      <a href="#" ><img class="responsive-img" src="img/Youtube.png"/></a>
+      <a href="#" ><img class="responsive-img" src="img/twitter.png"/></a>
     </div>
    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>

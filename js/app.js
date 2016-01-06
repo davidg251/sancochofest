@@ -1,35 +1,43 @@
 $(window).load(function() {
 
-    $(".loader").fadeOut("slow");
 
+         $(".loader").fadeOut("slow");
     $( document ).ready(function(){
+      var counter = 0;
+      timer = setInterval(function() {
+
+       $("#contador").html(counter++);
+       if(counter > 109){clearInterval(timer);}
+
+     }, 10);
 
 
-      $('.slider').slider({
-        interval:2500
-      });
-      $('.materialboxed').materialbox();
+
+ var a = $( window ).height();
+ $('.slider').slider({height: a+8});
 
       $('.button-collapse').sideNav({
           menuWidth: 500,
           closeOnClick: true
         }
       );
-       $('.parallax').parallax();
+       //$('.parallax').parallax();
+
 
        window.addEventListener('scroll', function(e){
+
          var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-             shrinkOn = 400,
-             header = $('#logo')
+             shrinkOn = 200,
+             header = $('#menugrande')
          if (distanceY > shrinkOn) {
-             $('#logo').addClass('pequenio')
-             $('#menu').addClass('blue z-depth-5')
-             $('#logo2').removeClass('invisible')
+
+             $('#menu').removeClass('enlaces-trans')
+
          } else {
-             if ( $('#logo').hasClass('pequenio')) {
-                  $('#menu').removeClass('blue z-depth-5')
-                  $('#logo').removeClass('pequenio')
-                  $('#logo2').addClass('invisible')
+             if ( ! $('#menu').hasClass('enlaces-trans')) {
+
+                  $('#menu').addClass('enlaces-trans')
+
              }
 
          }
@@ -47,9 +55,7 @@ $(window).load(function() {
               window.location.hash = target;
           });
       });
-      $( '#2013').mouseenter( function(){  $(this)[0].src = 'img/color2013.png';} ).mouseleave( function(){  $(this)[0].src = 'img/bn2013.png';});
-      $( '#2014').mouseenter( function(){  $(this)[0].src = 'img/color2014.png';} ).mouseleave( function(){  $(this)[0].src = 'img/bn2014.png';});
-      $( '#2015').mouseenter( function(){  $(this)[0].src = 'img/color2014.png';} ).mouseleave( function(){  $(this)[0].src = 'img/bn2014.png';});
+
 
 
       $('#enviar-formulario').click(function(){
@@ -63,7 +69,7 @@ $(window).load(function() {
 
           return;
         }else{
-        $.post('mail.php',
+        $.post('php/mail.php',
           {
             nombre : nombre,
             correo : correo,

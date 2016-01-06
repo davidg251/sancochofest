@@ -18,10 +18,17 @@ nav,h1,h2,h3,h4,h5
 {
 margin-bottom: 15px;
 }
+.slider .indicators .indicator-item {
+    height: 8px;
+    width: 8px;
+
+    background-color: #FFFFFF
+  }
 .parallax-container
 {
   overflow: visible;
 }
+
   .seccion {
       padding-top: 1rem;
       padding-bottom: 1rem;
@@ -56,6 +63,12 @@ margin-bottom: 15px;
     width: 316px;
     transition: width .5s;
   }
+/********/
+
+/*PILAAAAAASSS*/
+
+
+/**********/
   .contenido
   {
     margin-top: 83px;/*causa problemas en moviles y tablets*/
@@ -86,24 +99,26 @@ margin-bottom: 15px;
   margin-bottom: 2px;
 }
 
-#fest2016{background: #00b8e1 ;background-image: url('../img/trama-sancocho.png') ;}
-#memorias{background: #ed1a33;background-image: url('../img/trama-sancocho.png') ;}
+#fest2016{background: #ffb74d ;background-image: url('../img/trama-sancocho.png') ;}
+#memorias{background: #4fc3f7;background-image: url('../img/trama-sancocho.png') ;}
 #sponsors{background: #42A5F5;background-image: url('../img/trama-sancocho.png') ;}
 #contacto{color:#761714 !important;background: #ffb600;background-image: url('../img/trama-sancocho.png') ;}
+
+
 .valign-wrapper .valign {
     display: block;
     margin: auto;
 }
 
-/*resposnive*/
-@media only screen and (min-width: 767px) {
+
+@media only screen and (max-width: 767px) {
 
 .seccion
 {
   height: initial;
 }
-
 }
+
 
 nav ul li:hover {
   background: transparent;
@@ -181,6 +196,7 @@ transition: 1.7s !important;
      z-index: 2;
      transition: 1.7s ease-in-out;
     /* transition:opacity .5s;*/
+
   }
 
 .bn
@@ -190,12 +206,13 @@ transition: 1.7s !important;
 }
 .container-poster:hover .color {
 opacity: 1;
-
+transform:scale(1.2);
 }
 .container-poster:hover .color {
 
 opacity: 1;
 }
+
 
 .aviso
 {
@@ -224,11 +241,42 @@ a[href="#contacto"]{background-color:#00aa88;}
   line-height: 64px;
 }
 
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+
+
+padding-left: 15px;
+}
+
+input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+
+}
+
+input[type=text].invalid,
+input[type=text]:focus.invalid,
+input[type=password].invalid,
+input[type=password]:focus.invalid,
+input[type=email].invalid, input[type=email]:focus.invalid,
+textarea.materialize-textarea:focus.invalid {
+
+}
+
+
+#enviar-formulario
+{
+
+}
+
+@media only screen and (min-width: 601px){
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 64px;
     line-height: 33px;
 }
-
+}
 
 .header
 {
@@ -250,7 +298,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 {
   background-image: url('../img/telefono.png');
   background-repeat: no-repeat;
-  background-size: contain;;
+
   background-position: center;
 
 }
@@ -287,45 +335,4 @@ left: -35px;
 {
   width: 40px;
 
-}
-@media only screen and (max-width: 601px){
-
-.logos-social
-{
-
-  left: 40%;
-  right: 40%;
-
-}
-.logos-fijos
-{
-      transform:scale(0.35);
-}
-.logo-iz
-{
-left: -65px;
-bottom: -61px;
-}
-.logo-de
-{
-right: -65px;
-bottom: -61px;
-}
-.logos-social img
-{
-  width: 30px;
-
-}
-}
-
-
-.img-fest-2016
-{
-  max-width: 50% !important;
-}
-
-.row-memorias
-{
-  width: 80%;
-  margin: auto !important;
 }
