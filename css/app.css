@@ -28,10 +28,7 @@ nav,h1,h2,h3,h4,h5
 {
 margin-bottom: 15px;
 }
-.parallax-container
-{
-  overflow: visible;
-}
+
   .seccion {
       padding-top: 1rem;
       padding-bottom: 1rem;
@@ -62,10 +59,7 @@ margin-bottom: 15px;
   background: transparent;
   box-shadow: none;
 }
-.parallax-container {
-      height: 800px;
 
-    }
 
     .pequenio
     {
@@ -83,9 +77,9 @@ margin-bottom: 15px;
 }
 
 #fest2016{margin-top:-40px;background: #00b8e1 ;/*background-image: url('../img/trama-sancocho.png') ;*/}
-#memorias{background: #ff8a80;/*background-image: url('../img/trama-sancocho.png') ;*/}
+#memorias{background: #FFB804;/*background-image: url('../img/trama-sancocho.png') ;*/}
 #sponsors{background: #42A5F5;/*background-image: url('../img/trama-sancocho.png') ;*/}
-#contacto{color:#761714 !important;background: #ffb600;/*background-image: url('../img/trama-sancocho.png') ;*/}
+#contacto{background:#272727 !important /* color:#761714 !important;background: #ffb600;*//*background-image: url('../img/trama-sancocho.png') ;*/}
 .valign-wrapper .valign {
     display: block;
     margin: auto;
@@ -98,6 +92,7 @@ margin-bottom: 15px;
 {
   height: initial;
 }
+
 
 }
 
@@ -231,7 +226,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 
 .header
 {
-  border-bottom: 3px white solid;
+  /*border-bottom: 3px white solid;*/
 }
 
 .header.n
@@ -242,8 +237,19 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 @media only screen and (min-width: 993px){
 .container {
      width: 85%;
+
 }
 }
+/*caption main problema*/
+@media (max-width:481px){
+.slider .slides li .caption {
+
+    top: 5% !important;
+      font-size: 5px !important;
+}
+}
+
+
 
 #telefono
 {
@@ -350,13 +356,13 @@ bottom: -61px;
 .tabs {
 
     background-color: transparent;
-    color: #fff;
+    color: #212121;
     border: 1px solid;
     border-radius: 21px;
 }
 
 .tabs .tab a {
-  color: #fff;
+  color: #212121;
   }
 
     body {
@@ -387,7 +393,7 @@ bottom: -61px;
   .slider .slides li .caption.left-align
  
   {
-    width: 50%;
+   /* width: 50%;*/
   }
 
   .tabs .tab .active
@@ -405,3 +411,12 @@ bottom: -61px;
 
     border: 2px solid #fff;
 }
+
+.flow-text
+{
+  text-align: justify;
+}
+
+.parallax-container {
+      height: 200px;
+    }

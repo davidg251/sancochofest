@@ -11,12 +11,12 @@ $(window).load(function() {
 
      }, 10);
 
-        $(document).ready(function(){
-  
-    });
+ 
        
+        $('.parallax').parallax();
 
-
+      
+   
  var a = $( window ).height();
  $('.slider').slider({height: a+8});
 
@@ -25,7 +25,7 @@ $(window).load(function() {
           closeOnClick: true
         }
       );
-       //$('.parallax').parallax();
+       
 
 
        window.addEventListener('scroll', function(e){
@@ -50,8 +50,16 @@ $(window).load(function() {
      $('a[href^="#"]').on('click',function (e) {
           e.preventDefault();
           var target = this.hash;
+
+          if(target == '#2013' || target == '#2014' || target == '#2015')
+          {
+            return;
+          }
+
           var $target = $(target);
+
           $('html, body').stop().animate({
+              
               'scrollTop': $target.offset().top
 
           }, 900, 'swing', function () {
