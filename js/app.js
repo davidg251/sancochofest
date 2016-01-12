@@ -1,26 +1,32 @@
 $(window).load(function() {
 
+  $(".loader").fadeOut("slow");
+  
 
-         $(".loader").fadeOut("slow");
-    $( document ).ready(function(){
+  $( document ).ready(function(){
+
+
       var counter = 0;
+      
       timer = setInterval(function() {
 
        $("#contador").html(counter++);
        if(counter > 109){clearInterval(timer);}
 
-     }, 10);
+      }, 10);
 
  
        
-        $('.parallax').parallax();
+      $('.parallax').parallax();
+
+        $('.programacionfest').slick({});
 
       
    
- var a = $( window ).height();
- $('.slider').slider({height: a+8});
+     var a = $( window ).height();
+     $('.slider').slider({height: a+8});
 
-      $('.button-collapse').sideNav({
+     $('.button-collapse').sideNav({
           menuWidth: 500,
           closeOnClick: true
         }

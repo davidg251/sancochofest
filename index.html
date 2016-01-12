@@ -1,106 +1,156 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <title>Sancocho Fest 2016</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
     <meta name="description" content="El Sancocho Fest es un espacio multiartístico y cultural en el que convergen diversas expresiones que pueden ser apreciadas por el público de manera gratuita">
     <meta name="keywords" content="sancocho fest,festival,multicultural,tulua, valle del cauca, musica">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="css/app.css">
-    <style>.spinner {width: 60px;height: 60px;margin: 25% auto;margin-bottom: 0;background-color:orange;z-index: 999;border-radius: 100%;-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;animation: sk-scaleout 1.0s infinite ease-in-out;}
-  @-webkit-keyframes sk-scaleout {0% { -webkit-transform: scale(0) }100% {-webkit-transform: scale(1.0);opacity: 0;}}
-@keyframes sk-scaleout {0% {-webkit-transform: scale(0);transform: scale(0);} 100% {-webkit-transform: scale(1.0);transform: scale(1.0);opacity: 0;}}</style>
-  </head>
-  <div class="loader" style="z-index: 999;width: 100%;height: 100%;background:#fafafa;position: fixed;"><div class="spinner"></div><div style="width:80px;z-index: 999;color:#212121;margin: 0 auto;">CARGANDO...</div></div>
-  <body>
-  <main>
-    <div class="navbar-fixed">
-      <nav id="menu" class="cabecera  enlaces-trans">
-        <div class="cabecera nav-wrapper">
-
-          <a href="#" data-activates="mobil" class="button-collapse"><i class="material-icons">menu</i></a>
-          <div class="proteccion valign-wrapper">
-            <!--<a class="hide-on-med-and-down"><img id="logo2" class="invisible logo2 left" src="img/logo2.png"/></a>-->
-            <ul class="left">
-            </ul>
-
-            <ul id="menugrande" class=" valign hide-on-med-and-down">
-              <li id="logo" ><a class="item-menu"><img class="logo responsive-img" src="img/logoBlanco.PNG"/></a></li>
-
-              <li><a class="item-menu" href="#home">INICIO</a></li>
-
-              <li><a class="item-menu" href="#fest2016">FEST 2016</a></li>
-
-              <li><a class="item-menu"  href="#memorias">MEMORIAS</a></li>
-
-              <li><a class="item-menu"  href="#sponsors">SPONSORS</a></li>
-
-              <li><a class="item-menu" href="#contacto">CONTACTO</a></li>
-            </ul>
-          </div>
-            <ul class="side-nav" id="mobil">
-              <li><a href="#home">INICIO</a></li>
-              <li><a href="#fest2016">FEST 2016</a></li>
-              <li><a href="#memorias">MEMORIAS</a></li>
-              <li><a href="#contacto">CONTACTO</a></li>
-            </ul>
-        </div>
-      </nav>
-    </div>
-
-    <div id="home" class="">
-      <div class="">
-          <div class="slider">
-    <ul class="slides">
-          <li>
-        <img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10451053_895299717179705_3906904319995683263_n.jpg?oh=0ac94cf67f6f65b380e8dab319fa9cee&oe=57086D69&__gda__=1464281091_d1686c441f619ff8a0791d78e9bc3723"> <!-- random image -->
-        <div class="caption right-align">
-          <h1  class="joda cyan darken-4"><span class=" cyan darken-4">FALTAN 200 DIAS PA'L SANCOCHO</span></h>
-          <h5 class="light grey-text text-lighten-3 cyan accent-4">Mimi camelusa(ARG) / Rafael Ponde(BR) / Ryan Tennis(USA) / Open Mind Groove(COL) / Sólo Valencia(COL) / Petit Felas(COL) / El CaribeFunk(COL)</h5>
-        </div>
+    <link type="text/css" rel="stylesheet" href="lib/slick/slick.css">
+    <link type="text/css" rel="stylesheet" href="lib/slick/slick-theme.css">
+    <!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
+    <link type="text/css" rel="stylesheet" href="css/estilos.min.css/materialize.css"  media="screen,projection"/>
     
-      <li>
-        <img src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xft1/v/t1.0-9/1908167_881959001847110_46192226912464326_n.jpg?oh=053396c8b70c97e4794cea7efbd0c5c2&oe=56FE0B7C"> <!-- random image -->
-        <div class="caption left-align">
-          <h1 class=" cyan darken-4"><span class=" cyan darken-4">ESCUELA DEL SANCOCHO</span></h1>
-           <h5 class="light grey-text text-lighten-3 cyan darken-3 ">Una forma de acercamos de una manera directa a la
+    <link type="text/css" rel="stylesheet" href="css/app.css">
+    <style>.spinner{width: 60px;height: 60px;margin: 25% auto;margin-bottom: 0;background-color:orange;z-index: 999;border-radius: 100%;-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;animation: sk-scaleout 1.0s infinite ease-in-out;}
+  @-webkit-keyframes sk-scaleout {0% { -webkit-transform: scale(0) }100% {-webkit-transform: scale(1.0);opacity: 0;}}
+@keyframes sk-scaleout {0% {-webkit-transform: scale(0);transform: scale(0);} 100% {-webkit-transform: scale(1.0);transform: scale(1.0);opacity: 0;}}
+    </style>
+  </head>
+  
+
+  <div class="loader" style="z-index: 999;width: 100%;height: 100%;background:#fafafa;position: fixed;"><div class="spinner"></div><div style="width:80px;z-index: 999;color:#212121;margin: 0 auto;">...CARGANDO...</div></div>
+  
+
+  <body>
+    <main>
+      <!--menu estatico inicio-->
+      <div class="navbar-fixed">
+        <nav id="menu" class="cabecera  enlaces-trans">
+          <div class="cabecera nav-wrapper">
+
+              <a href="#" data-activates="mobil" class="button-collapse"><i class="material-icons">menu</i></a>
+                
+                <div class="proteccion valign-wrapper">
+                  <!--<a class="hide-on-med-and-down"><img id="logo2" class="invisible logo2 left" src="img/logo2.png"/></a>-->
+                   <ul id="menugrande" class=" valign hide-on-med-and-down">
+                      <li id="logo" ><a class="item-menu"><img class="logo responsive-img" src="img/logoBlanco.PNG"/></a></li>
+                      <li><a class="item-menu" href="#home">INICIO</a></li>
+                      <li><a class="item-menu" href="#fest2016">FEST 2016</a></li>
+                      <li><a class="item-menu"  href="#memorias">MEMORIAS</a></li>
+                      <li><a class="item-menu"  href="#sponsors">SPONSORS</a></li>
+                      <li><a class="item-menu" href="#contacto">CONTACTO</a></li>
+                  </ul>
+                </div>
+
+              <ul class="side-nav" id="mobil">
+                <li><a href="#home">INICIO</a></li>
+                <li><a href="#fest2016">FEST 2016</a></li>
+                <li><a href="#memorias">MEMORIAS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+              </ul>
+          </div>
+        </nav>
+      </div>
+      <!--menu estatico fin-->
+
+      <!-- home inicio -->
+      <div id="home" class="">
+        <div class="">
+          <div class="slider">
+            
+            <ul class="slides">
+              
+              <li>
+                  <img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10451053_895299717179705_3906904319995683263_n.jpg?oh=0ac94cf67f6f65b380e8dab319fa9cee&oe=57086D69&__gda__=1464281091_d1686c441f619ff8a0791d78e9bc3723"> 
+                  <div class="caption right-align">
+                    <h1  class="joda cyan darken-4"><span class=" cyan darken-4">FALTAN MUY POCOS DIAS PA'L SANCOCHO</span></h1>
+                    <h5 class="light grey-text text-lighten-3 cyan accent-4">Mimi camelusa(ARG) / Rafael Ponde(BR) / Ryan Tennis(USA) / Open Mind Groove(COL) / Sólo Valencia(COL) / Petit Felas(COL) / El CaribeFunk(COL)</h5>
+                  </div>
+    
+               </li>
+
+               <li>
+                  <img src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xft1/v/t1.0-9/1908167_881959001847110_46192226912464326_n.jpg?oh=053396c8b70c97e4794cea7efbd0c5c2&oe=56FE0B7C"> <!-- random image -->
+                  <div class="caption left-align">
+                    <h1 class=" cyan darken-4"><span class=" cyan darken-4">ESCUELA DEL SANCOCHO</span></h1>
+                    <h5 class="light grey-text text-lighten-3 cyan darken-3 ">Una forma de acercamos de una manera directa a la
 población incorporando nuevas formas de compartir saberes mediante
 talleres, clínicas artísticas y conversatorios</h5>
+                  </div>
+              
+              </li>
+        
+              <li>
+                <img src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xta1/t31.0-8/10498078_881959035180440_4123235448693317470_o.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                  <h1><span class=" cyan darken-4">¿ QUE ES EL SANCOCHO ?</span></h1>
+                   <h5 class="light white-text cyan darken-3">Cada año, el Sancocho Fest reúne artistas,
+        expositores y tallerístas nacionales e
+        internacionales, para ofrecer a la
+        comunidad de Tuluá y sus alrededores un
+        espacio multiartístico de esparcimiento y
+        entretenimiento</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </li>
-        </li>
-      <li>
-        <img src="https://scontent-mia1-1.xx.fbcdn.net/hphotos-xta1/t31.0-8/10498078_881959035180440_4123235448693317470_o.jpg"> <!-- random image -->
-        <div class="caption center-align">
-          <h1 ><span class=" cyan darken-4">¿ QUE ES EL SANCOCHO ?</span></h2>
-           <h5 class="light white-text cyan darken-3">Cada año, el Sancocho Fest reúne artistas,
-expositores y tallerístas nacionales e
-internacionales, para ofrecer a la
-comunidad de Tuluá y sus alrededores un
-espacio multiartístico de esparcimiento y
-entretenimiento</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
       </div>
-    </div>
+      <!-- home fin-->
 
      <div id="fest2016" class="seccion white-text">
          <div class="row container contenido">
            <div class="col l12 m12 s12">
             <div class="row">
-              <h2 class="header left">FEST 2016</h2>
+              <h2 class="header left">LINE UP</h2>
             </div>
-            <div class="valign-wrapper">
-              <img class="valign responsive-img center img-fest-2016" src="img/5de7.png"/>
+            <div class="programacionfest">
+              <div class="row">
+                <h3 class="center-align">Dia 1 - Febrero 5</h3>
+                  <div class="container">
+                    <p class="center-align line-up flow-text">
+                      Mimi camelusa   9pm  tarima principal<span class="separator"></span>
+                      Rafael Ponde  9pm  tarima principal<span class="separator"></span>
+                      Ryan Tennis  9pm  tarima principal<span class="separator"></span>
+                      De Tierra Caliente  9pm  tarima principal<span class="separator"></span>
+                      Sólo Valencia  9pm  tarima principal<span class="separator"></span>
+                      Petit Felas  9pm  tarima principal<span class="separator"></span>
+                    </p>
+                  </div>
+              </div>
+              
+              <div class="row">
+                <h3 class="center-align">Dia 1 - Febrero 5</h3>
+                  <div class="container">
+                    <p class="center-align flow-text">
+                      1- Mimi camelusa   9pm  tarima principal
+                      2- Rafael Ponde  9pm  tarima principal
+                      4- Ryan Tennis  9pm  tarima principal
+                      5- De Tierra Caliente  9pm  tarima principal
+                      6- Sólo Valencia  9pm  tarima principal
+                      7- Petit Felas  9pm  tarima principal
+                    </p>
+                  </div>
+              </div>
+              <div class="row">
+                <h3 class="center-align">Dia 1 - Febrero 5</h3>
+                  <div class="container">
+                    <p class="center-align flow-text">
+                      1- Mimi camelusa   9pm  tarima principal
+                      2- Rafael Ponde  9pm  tarima principal
+                      4- Ryan Tennis  9pm  tarima principal
+                      5- De Tierra Caliente  9pm  tarima principal
+                      6- Sólo Valencia  9pm  tarima principal
+                      7- Petit Felas  9pm  tarima principal
+                    </p>
+                  </div>
+              </div>
+           
             </div>
-            <p class="flow-text">
-
-            El Sancocho Fest se ha convertido en un evento que cada año reune artistas, expositores y talleristas nacionales e internacionales; para ofrecer a la comunidad de Tuluá y sus alrededores, un espacio multiartistico de esparcimiento y entretenimiento, pero al mismo tiempo  de educación informal en los temas de interes ambiental y social.</p>
-          </p>
+          
 
          </div>
        </div>
@@ -161,10 +211,7 @@ entretenimiento</h5>
         </div>
       </div>
     </div>
-       <div class="parallax-container">
-      <div class="parallax"><img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/11040402_895299153846428_7612322100646838494_n.jpg?oh=97b29772a385116df4564b7b11823ffa&oe=57475C74&__gda__=1464266181_83432ef7fee7f160a66dec42ea546935"></div>
-      <h3 class="white-text center-align">Esto es una pequeña prueba, Avisa si queres que me dejen...</h3>
-    </div>
+      
     <div id="escuela" class="seccion blue black-text">
     
 
@@ -197,11 +244,14 @@ entretenimiento</h5>
       </div>
     </div>
 
-
+     <div class="parallax-container">
+      <div class="parallax"><img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/11040402_895299153846428_7612322100646838494_n.jpg?oh=97b29772a385116df4564b7b11823ffa&oe=57475C74&__gda__=1464266181_83432ef7fee7f160a66dec42ea546935"></div>
+      <h3 class="white-text center-align">Gracias Por visitar y hacer parte del sancocho :)</h3>
+    </div>
      <div id="contacto" class="seccion white-text">
        <div class="container ">
          <div id="telefono" class="row contenido">
-           <h2 class="center grey-text text-lighten-4 gray-text center">CONTACTO</h2>
+           
 
 
            <div class="col l12 m12 s12">
@@ -213,9 +263,7 @@ entretenimiento</h5>
                            PARCEERO EL FORMULARIO ESTA MAL
 
                           </div>
-                          <p class="white-text flow-text">
-                            Gracias por visitar y hacer parte del sancocho.
-                          </p>
+                         
                        <div class="row">
                            <div class="input-field col m6 s6 l6">
 
@@ -246,7 +294,10 @@ entretenimiento</h5>
           <div class="transparent grey-text footer-copyright">
             <div class="container">
             © 2016 Asociacion Montando la Podrida
-            <a class="white-text  right" href="#!">Otros Links</a>
+            <a class="white-text  right" href="#!">Facebook</a>
+            <a class="white-text  right" href="#!">Twitter</a>
+            <a class="white-text  right" href="#!">Instagram</a>
+            <a class="white-text  right" href="#!">Youtubee</a>
             </div>
           </div>
         </footer>
@@ -262,6 +313,7 @@ entretenimiento</h5>
     </div>
     -->
    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+   <script type="text/javascript" src="lib/slick/slick.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>

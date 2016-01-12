@@ -33,7 +33,7 @@ margin-bottom: 15px;
       padding-top: 1rem;
       padding-bottom: 1rem;
 
-      min-height: 100%;
+     /* min-height: 100%;*/
 
   }
 
@@ -60,11 +60,6 @@ margin-bottom: 15px;
   box-shadow: none;
 }
 
-
-    .pequenio
-    {
-      width: 0;
-    }
 
 .division
 {
@@ -420,3 +415,22 @@ bottom: -61px;
 .parallax-container {
       height: 200px;
     }
+
+.separator
+{
+  width: 10px;
+  height:10px;
+  background: #fff;
+  display: inline-block;
+  margin: 2px 5px;
+  border-radius: 10px;
+}
+
+.line-up
+{
+  text-transform: uppercase;
+}
+
+a{
+  transition: 1s all;
+}
