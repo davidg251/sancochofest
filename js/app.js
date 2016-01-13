@@ -27,7 +27,7 @@ $(window).load(function() {
      $('.slider').slider({height: a+8});
 
      $('.button-collapse').sideNav({
-          menuWidth: 500,
+          menuWidth:240,
           closeOnClick: true
         }
       );

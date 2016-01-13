@@ -167,7 +167,7 @@ transition: 1.7s !important;
     left:0px;
      top: 0px;
      z-index: 2;
-     transition: 1.7s ease-in-out;
+     transition: 1s ease-in-out;
     /* transition:opacity .5s;*/
   }
 
@@ -185,27 +185,18 @@ opacity: 1;
 opacity: 1;
 }
 
-.aviso
-{
-  font-size: 6.5rem;
-  color: white;
-  margin: 0 50px;
-
-}
-#aviso2
-{
-  color:#eeffaa;
-}
 nav ul a.item-menu {
 font-weight: 400;
 font-size: 18px;
 }
+
+@media only screen and (min-width: 1024px){
 a[href="#home"]{background-color:#8bc34a;}
 a[href="#fest2016"]{background-color:#ff5252;}
 a[href="#memorias"]{background-color:#ff9955;}
 a[href="#sponsors"]{background-color:#ffcc00;}
 a[href="#contacto"]{background-color:#00aa88;}
-
+}
 .enlaces-trans ul li a
 {
   background: transparent !important;
@@ -218,17 +209,6 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     line-height: 33px;
 }
 
-
-.header
-{
-  /*border-bottom: 3px white solid;*/
-}
-
-.header.n
-{
-  border-bottom: 3px #333 solid;
-}
-
 @media only screen and (min-width: 993px){
 .container {
      width: 85%;
@@ -239,7 +219,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 @media (max-width:481px){
 .slider .slides li .caption {
 
-    top: 5% !important;
+    top: 10% !important;
       font-size: 5px !important;
 }
 }
@@ -248,7 +228,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 
 #telefono
 {
-  background-image: url('../img/telefono.png');
+  /*background-image: url('../img/telefono.png');*/
   background-repeat: no-repeat;
   background-size: contain;;
   background-position: center;
@@ -265,21 +245,10 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 .logos-social
 {
   position: fixed;
-  left: 45%;
-  bottom:0;
-    display: inline-flex;
-      z-index: 999;
-}
-.logo-iz
-{
-left: -35px;
-    bottom: -61px;
-}
-.logo-de
-{
-
-  right: -35px;
-  bottom: -61px;
+  right: 5px;
+  top:40%;
+  display: inline-flex;
+  z-index: 999;
 
 }
 
@@ -288,40 +257,33 @@ left: -35px;
   width: 40px;
 
 }
+@media only screen and (max-width: 1000px){
+  /*hamburguesa*/
+  
+   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 45px;
+    line-height: 40px;
+    width: 45px;
+    font-size: 1.3em;
+    background-color:#ff9955;
+    border-radius: 40px;
+    padding: 5px 8px;
+    margin: 5px;
+  }
+}
+
 @media only screen and (max-width: 601px){
 
-.logos-social
-{
+  .logos-fijos
+  {
+        transform:scale(0.35);
+  }
 
-  left: 40%;
-  right: 40%;
+  .logos-social img
+  {
+    width: 30px;
 
-}
-.logos-fijos
-{
-      transform:scale(0.35);
-}
-.logo-iz
-{
-left: -65px;
-bottom: -61px;
-}
-.logo-de
-{
-right: -65px;
-bottom: -61px;
-}
-.logos-social img
-{
-  width: 30px;
-
-}
-}
-
-
-.img-fest-2016
-{
-  max-width: 50% !important;
+  }
 }
 
 .row-memorias
@@ -372,25 +334,13 @@ bottom: -61px;
 
   .proteccion
   {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#939393+34,dbdbdb+100&0.65+19,0+100 */
-  background: red; /* For browsers that do not support gradients */
+
+  background: gray; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(bottom, rgba(39, 39, 39, 0.53) , transparent); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(bottom, rgba(39, 39, 39, 0.53), transparent); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(bottom, rgba(39, 39, 39, 0.53), transparent); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom, rgba(39, 39, 39, 0.53) , transparent); /* Standard syntax */
   }
-
-  #menugrande
-  {
-   
-  }
-
-  .slider .slides li .caption.left-align
- 
-  {
-   /* width: 50%;*/
-  }
-
   .tabs .tab .active
   {
     font-size: 25px;
@@ -401,9 +351,7 @@ bottom: -61px;
 }
 
 .slider .indicators .indicator-item {
-
-    background-color: rgba(224, 224, 224, 0);
-
+  background-color: rgba(224, 224, 224, 0);
     border: 2px solid #fff;
 }
 
@@ -413,7 +361,7 @@ bottom: -61px;
 }
 
 .parallax-container {
-      height: 200px;
+      height: 150px;
     }
 
 .separator
@@ -427,6 +375,7 @@ bottom: -61px;
 }
 
 .line-up
+
 {
   text-transform: uppercase;
 }
@@ -434,3 +383,15 @@ bottom: -61px;
 a{
   transition: 1s all;
 }
+
+.tabs .indicator
+{
+  display: none;
+}
+
+.side-nav{
+  background-color:#ff9955;
+  color: #fff;
+}
+
+.side-nav a{  color: #fff !important; font-size:1.2em; }
