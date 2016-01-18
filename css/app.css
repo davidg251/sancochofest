@@ -395,3 +395,13 @@ a{
 }
 
 .side-nav a{  color: #fff !important; font-size:1.2em; }
+
+.btn-flat
+{
+  border:1px solid #fff;
+  color: #fff;
+}
+a
+{
+  transition: 0.2s all !important;
+}
