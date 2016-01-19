@@ -5,6 +5,9 @@ var app = express();
 
 /*app.get('/', function (req, res) {
   });*/
+
+app.use(express.static('css'));
+app.use(express.static('img'));
 app.get('/', function (req, res) {
  res.sendFile(__dirname + '/temporal.html');
 
