@@ -20,16 +20,6 @@ h1,h2
   font-family:'GlacialIndifferenceBold';
 }
 
-.social
-{
-  position: fixed;
-  top: 40%;
-  right: 20px;
-}
-.social li
-{
-margin-bottom: 15px;
-}
 
   .seccion {
       padding-top: 1rem;
@@ -113,28 +103,7 @@ nav ul li:hover {
   width: 80px;
   transition: opacity .5s;
 }
-.invisible
-{
-  opacity: 0;
-  display: none;
-}
 
-.social-nav
-{
-  max-height: 36px;
-
-}
-.social-nav .left
-{
-  margin-left: 20px;
-}
-.social-nav .left a
-{
-  height: 30px;
-  width: 30px;
-  margin-left: 5px;
-
-}
 #menu
 {
   transition: .7s background;
