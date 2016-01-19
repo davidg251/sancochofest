@@ -1,23 +1,25 @@
-html, body { height: 100%; font-family: 'Maxwell', sans-serif;font-weight: 600;}
+html, body { height: 100%; font-family: 'GlacialIndifferenceRegular'; 
+   font-weight: normal; 
+   font-style: normal;;font-weight: 600;}
 @font-face {
-    font-family: 'GrundschriftBold';
-    src: url('../media/Grundschrift-Bold.otf');
+    font-family: 'GlacialIndifferenceRegular';
+    src: url('../font/GlacialIndifference-Regular.otf');
 }
 @font-face {
-    font-family: 'Maxwell';
-    src: url('../font/MAXWELL REGULAR.ttf');
+    font-family: 'GlacialIndifferenceBold';
+    src: url('../font/GlacialIndifference-Bold.otf');
 }
-@font-face {
-    font-family: 'Maxwell Bold';
-    src: url('../font/MAXWELL BOLD.ttf');
-}
-
 
 nav,h1,h2,h3,h4,h5
 {
   letter-spacing: 1px;
 
 }
+h1,h2
+{
+  font-family:'GlacialIndifferenceBold';
+}
+
 .social
 {
   position: fixed;
@@ -71,14 +73,17 @@ margin-bottom: 15px;
   margin-bottom: 2px;
 }
 
-#fest2016{margin-top:-40px;background: #00b8e1 ;/*background-image: url('../img/trama-sancocho.png') ;*/}
-#memorias{background: #FFB804;/*background-image: url('../img/trama-sancocho.png') ;*/}
-#sponsors{background: #42A5F5;/*background-image: url('../img/trama-sancocho.png') ;*/}
-#contacto{background:#272727 !important /* color:#761714 !important;background: #ffb600;*//*background-image: url('../img/trama-sancocho.png') ;*/}
+#fest2016{margin-top:-40px;background: #21234A ;}
+#quesomos{background: #FCC435;}
+#sponsors{background: #42A5F5;}
+
 .valign-wrapper .valign {
     display: block;
     margin: auto;
 }
+
+.mostaza{background: #FCC435;}
+.purpura{background: #21234A}
 
 /*resposnive*/
 @media only screen and (min-width: 767px) {
@@ -92,7 +97,7 @@ margin-bottom: 15px;
 }
 
 nav ul li:hover {
-  background: transparent;
+  background: transparent !important;
 }
   nav ul a.item-menu{
 
@@ -141,8 +146,6 @@ line-height: 51px;
 margin-left: 15px;
 }
 
-
-.c2015{background-image: url('../img/bn2014.png');}
 .f{width: 17px;margin: 7px 9px;}
 .y{width: 16px;margin: 8px 12px;}
 .t{width: 28px;margin: 2px 5px;}
@@ -187,15 +190,18 @@ opacity: 1;
 
 nav ul a.item-menu {
 font-weight: 400;
-font-size: 18px;
+font-size: 15px;
 }
 
 @media only screen and (min-width: 1024px){
+  /*
 a[href="#home"]{background-color:#8bc34a;}
 a[href="#fest2016"]{background-color:#ff5252;}
 a[href="#memorias"]{background-color:#ff9955;}
 a[href="#sponsors"]{background-color:#ffcc00;}
 a[href="#contacto"]{background-color:#00aa88;}
+}
+*/
 }
 .enlaces-trans ul li a
 {
@@ -225,23 +231,6 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 }
 
 
-
-#telefono
-{
-  /*background-image: url('../img/telefono.png');*/
-  background-repeat: no-repeat;
-  background-size: contain;;
-  background-position: center;
-
-}
-
-.logos-fijos
-{
-  position: fixed;
-  transform:scale(0.5);
-  z-index: 999;
-}
-
 .logos-social
 {
   position: fixed;
@@ -260,7 +249,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 @media only screen and (max-width: 1000px){
   /*hamburguesa*/
   
-   nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+   nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 45px;
     line-height: 40px;
     width: 45px;
@@ -274,10 +263,6 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 
 @media only screen and (max-width: 601px){
 
-  .logos-fijos
-  {
-        transform:scale(0.35);
-  }
 
   .logos-social img
   {
@@ -340,6 +325,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   background: -o-linear-gradient(bottom, rgba(39, 39, 39, 0.53), transparent); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(bottom, rgba(39, 39, 39, 0.53), transparent); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to bottom, rgba(39, 39, 39, 0.53) , transparent); /* Standard syntax */
+  
   }
   .tabs .tab .active
   {
@@ -347,7 +333,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   }
 
   .slider .indicators .indicator-item.active {
-    background-color: #18ffff;
+    background-color: #fff;
 }
 
 .slider .indicators .indicator-item {
@@ -404,4 +390,32 @@ a{
 a
 {
   transition: 0.2s all !important;
+}
+a:hover
+{
+  background: transparent !important;
+}
+.no-index ul li .item-menu
+{
+margin-top: 30px;
+
+}
+.no-index
+{
+  height: 100px !important; 
+  background: transparent;
+  box-shadow: none;
+}
+#menugrande
+{
+  margin-top: 40px;
+}
+.text-grey-darken-4
+{
+ color: #212121;
+}
+
+.row-sponsors
+{
+  width: 65% !important;
 }
