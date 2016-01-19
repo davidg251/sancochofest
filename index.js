@@ -1,13 +1,11 @@
 var express = require('express');
 var app = express();
 
-//app.use(express.static(__dirname ));
+app.use(express.static(__dirname+'/css' ));
 
-/*app.get('/', function (req, res) {
-  });*/
 
-app.use(express.static('css'));
-app.use(express.static('img'));
+
+
 app.get('/', function (req, res) {
  res.sendFile(__dirname + '/temporal.html');
 
