@@ -1,15 +1,13 @@
 var express = require('express');
 var app = express();
 
-app.use(express.static(__dirname ));
+app.use("/",express.static(__dirname ));
 
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/temporal.html');
 });
 
-app.get('/index.html', function (req, res) {
-  res.sendFile(__dirname + '/temporal.html');
-});
+
 
 var server = app.listen(process.env.PORT || 5000, function () {
 
