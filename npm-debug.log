@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'package.json' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 warn package.json SancochoFest@1.0.0 No README data
+5 silly cache add args [ 'package.json', null ]
+6 verbose cache add spec package.json
+7 silly cache add parsed spec { raw: 'package.json',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: 'package.json',
+7 silly cache add   spec: '/home/david/Público/sancochofest/package.json',
+7 silly cache add   type: 'local' }
+8 silly addLocalTarball shasum (computed) f8f4e9f28c4658fd0bc4a0434f39aedf082c4371
+9 verbose addTmpTarball /home/david/Público/sancochofest/package.json not in flight; adding
+10 verbose addTmpTarball validating metadata from /home/david/Público/sancochofest/package.json
+11 verbose tar unpack /home/david/Público/sancochofest/package.json
+12 verbose tar unpacking to /tmp/npm-5394-68b4317c/unpack-1e66e8dace8e
+13 verbose gentlyRm vacuuming /tmp/npm-5394-68b4317c/unpack-1e66e8dace8e
+14 silly gunzTarPerm modes [ '755', '644' ]
+15 error not a package /home/david/Público/sancochofest/package.json
+16 error addLocal Could not install /home/david/Público/sancochofest/package.json
+17 verbose stack Error: ENOENT, open '/tmp/npm-5394-68b4317c/unpack-1e66e8dace8e/package.json'
+17 verbose stack     at Error (native)
+18 verbose cwd /home/david/Público/sancochofest
+19 error Linux 3.13.0-63-generic
+20 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "package.json"
+21 error node v0.12.0
+22 error npm  v2.5.1
+23 error path /tmp/npm-5394-68b4317c/unpack-1e66e8dace8e/package.json
+24 error code ENOENT
+25 error errno -2
+26 error enoent ENOENT, open '/tmp/npm-5394-68b4317c/unpack-1e66e8dace8e/package.json'
+26 error enoent This is most likely not a problem with npm itself
+26 error enoent and is related to npm not being able to find a file.
+27 verbose exit [ -2, true ]
