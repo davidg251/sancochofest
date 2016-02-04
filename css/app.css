@@ -1,32 +1,25 @@
-html, body { height: 100%; font-family: 'GlacialIndifferenceRegular'; 
-   font-weight: normal; 
-   font-style: normal;;font-weight: 600;}
+html, body { 
+    height: 100%;
+    font-family: 'GlacialIndifferenceRegular'; 
+   }
 @font-face {
-    font-family: 'GlacialIndifferenceRegular';
-    src: url('../font/GlacialIndifference-Regular.otf');
+  font-family: 'GlacialIndifferenceRegular';
+   src: url('../font/GlacialIndifference-Regular.otf');
 }
 @font-face {
-    font-family: 'GlacialIndifferenceBold';
-    src: url('../font/GlacialIndifference-Bold.otf');
+  font-family: 'GlacialIndifferenceBold';
+   src: url('../font/GlacialIndifference-Bold.otf');
 }
 
-nav,h1,h2,h3,h4,h5
-{
-  letter-spacing: 1px;
-
-}
-h1,h2
+h1,h2,h3
 {
   font-family:'GlacialIndifferenceBold';
 }
 
-
   .seccion {
       padding-top: 1rem;
-      padding-bottom: 1rem;
-
-     /* min-height: 100%;*/
-
+      padding-bottom: 2rem;
+      overflow: hidden;
   }
 
   .responsive-img
@@ -45,69 +38,37 @@ h1,h2
   {
     margin-top: 40px;
   }
-.cabecera
-{
 
-  background: transparent;
-  box-shadow: none;
-}
-
-
-.division
-{
-  width: 5px;
-  height: 5px;
-  background: #fff;
-  border-radius: 5px;
-  display: inline-block;
-  margin-bottom: 2px;
-}
-
-#fest2016{margin-top:-40px;background: #21234A ;}
-#quesomos{background: #FCC435;}
-#sponsors{background: #42A5F5;}
+#sancocho{margin-top:-40px}
 
 .valign-wrapper .valign {
     display: block;
     margin: auto;
 }
 
-.mostaza{background: #FCC435;}
-.purpura{background: #21234A}
-
-/*resposnive*/
-@media only screen and (min-width: 767px) {
-
-.seccion
-{
-  height: initial;
-}
-
-
-}
-
+.mostaza{background: #FCC435 !important;}
+.purpura{background: #21234A !important;}
+.mostaza-2{background:#FFCE4F !important;}
+/*
 nav ul li:hover {
   background: transparent !important;
-}
+}*/
   nav ul a.item-menu{
 
     transition-duration: 0.2s;
 }
   nav ul a.item-menu:hover{
     -webkit-transform: scale(0.8);
-            -ms-transform: scale(0.8);
-            transform: scale(0.8);
-}
-.logo2
-{
-  width: 80px;
-  transition: opacity .5s;
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
 }
 
 #menu
 {
   transition: .7s background;
   -webkit-transition: .7s background;
+  background: transparent;
+  box-shadow: none;
 }
 .btn-floating
 {
@@ -123,10 +84,9 @@ transition: 1.7s !important;
   margin-top: 31px;
  
 }
-.enlace{color:black;opacity:0;left:0;top:0;}
  .color{
    opacity: 0;
-    position: absolute;
+  position: absolute;
     left:0px;
      top: 0px;
      z-index: 2;
@@ -153,24 +113,20 @@ font-weight: 400;
 font-size: 15px;
 }
 
-@media only screen and (min-width: 1024px){
-  /*
-a[href="#home"]{background-color:#8bc34a;}
-a[href="#fest2016"]{background-color:#ff5252;}
-a[href="#memorias"]{background-color:#ff9955;}
-a[href="#sponsors"]{background-color:#ffcc00;}
-a[href="#contacto"]{background-color:#00aa88;}
-}
-*/
-}
-.enlaces-trans ul li a
+
+#bigmenu
 {
-  background: transparent !important;
+  margin-top: 20px;
+}
+#bigmenu li a
+{
+  
   line-height: 64px;
   margin-top: 36px;
 }
 
-nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+ nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    margin: 15px;
     height: 64px;
     line-height: 33px;
 }
@@ -180,16 +136,25 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
      width: 85%;
 
 }
+
+
 }
 /*caption main problema*/
 @media (max-width:481px){
 .slider .slides li .caption {
 
-    top: 10% !important;
-      font-size: 5px !important;
+    top: 15% !important;
+      
+}
+.titulos
+{
+  font-size: 2.8em;
 }
 }
 
+a{
+  color: #fff !important;
+}
 
 .logos-social
 {
@@ -209,21 +174,19 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 @media only screen and (max-width: 1000px){
   /*hamburguesa*/
   
-   nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+   .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 45px;
     line-height: 40px;
     width: 45px;
     font-size: 1.3em;
     background-color:#ff9955;
     border-radius: 40px;
-    padding: 5px 8px;
-    margin: 5px;
+
+    margin: 20px;
   }
 }
 
 @media only screen and (max-width: 601px){
-
-
   .logos-social img
   {
     width: 30px;
@@ -246,7 +209,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 .slider .indicators {
 
     bottom: 60px;
-    z-index: 999;
+    z-index: 998;
 }
 
 .slider .slides li .caption {
@@ -265,12 +228,6 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 
 .tabs .tab a {
   color: #212121;
-  }
-
-    body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
   }
 
   main {
@@ -304,19 +261,25 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 .flow-text
 {
   text-align: justify;
+  font-weight: bold;
 }
 
-.parallax-container {
-      height: 150px;
-    }
-
-.separator
+.separator-white
 {
   width: 10px;
   height:10px;
   background: #fff;
   display: inline-block;
-  margin: 2px 5px;
+  margin: 5px 10px;
+  border-radius: 10px;
+}
+.separator
+{
+  width: 10px;
+  height:10px;
+  background: #1f1f11;
+  display: inline-block;
+  margin: 5px 10px;
   border-radius: 10px;
 }
 
@@ -344,9 +307,10 @@ a{
 
 .btn-flat
 {
-  border:1px solid #fff;
-  color: #fff;
+  border:1px solid #f1f1f1;
+  color: #f1f1f1;
 }
+
 a
 {
   transition: 0.2s all !important;
@@ -378,4 +342,61 @@ margin-top: 30px;
 .row-sponsors
 {
   width: 65% !important;
+}
+
+.caption
+{
+  font-size: 10px !important;
+}
+
+.menu
+{
+  width: 20px;
+  height: 20px;
+  margin:12px;
+}
+
+.chip
+{
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-protected
+{
+  background-color:rgba(4, 6, 44, 0.77);
+  margin-top: 0 !important;
+}
+.menu-protected li a
+{
+  margin: 0 !important;
+}
+
+input,textarea{color:#fff !important;}
+
+
+.header
+{
+  margin-bottom:3rem;
+  margin-top: 5rem;
+}
+.parallax-container {
+      height: 320px;
+    }
+
+
+.row-nomargin
+{
+  margin-bottom: 0 !important;
+}
+
+.slick-arrow-dark:before
+{
+  color: #212121 !important;
+}
+
+.btn-dark
+{
+  border: 1px solid #212121;
+  color: #212121 !important;
 }

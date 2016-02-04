@@ -5,21 +5,21 @@ $(window).load(function() {
 
   $( document ).ready(function(){
 
-
-      var counter = 0;
-      
-      timer = setInterval(function() {
-
-       $("#contador").html(counter++);
-       if(counter > 109){clearInterval(timer);}
-
-      }, 10);
-
  
        
       $('.parallax').parallax();
 
-        $('.programacionfest').slick({});
+        $('.programacionfest').slick({  
+          autoplay: true,
+         autoplaySpeed: 4000});
+        
+        $(' .programacionescuela').slick({  
+          autoplay: true,
+         autoplaySpeed: 4000,
+         prevArrow:'<button  type="button" class="slick-prev slick-arrow-dark">Previous</button>',
+         nextArrow:'<button  type="button" class="slick-next slick-arrow-dark">Next</button>'
+
+       });
 
       
    
@@ -37,17 +37,18 @@ $(window).load(function() {
        window.addEventListener('scroll', function(e){
 
          var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-             shrinkOn = 200,
-             header = $('#menugrande')
+             shrinkOn = 100
+         
          if (distanceY > shrinkOn) {
 
-             $('#menu').removeClass('enlaces-trans')
+             $('#bigmenu').addClass('menu-protected')
              $('#logo').css("display", "none")
          } else {
-             if ( ! $('#menu').hasClass('enlaces-trans')) {
+             if (  $('#bigmenu').hasClass('menu-protected')) {
 
-                  $('#menu').addClass('enlaces-trans')
+                  $('#bigmenu').removeClass('menu-protected')
                   $('#logo').css("display", "initial")
+                 
              }
 
          }
@@ -56,12 +57,6 @@ $(window).load(function() {
      $('a[href^="#"]').on('click',function (e) {
           e.preventDefault();
           var target = this.hash;
-
-          if(target == '#2013' || target == '#2014' || target == '#2015')
-          {
-            return;
-          }
-
           var $target = $(target);
 
           $('html, body').stop().animate({
@@ -84,8 +79,8 @@ $(window).load(function() {
         if(nombre === '' || correo === '' || mensaje === '' )
         {
           $('#error').removeClass('hide');
-
-          return;
+          //return;
+        
         }else{
         $.post('php/mail.php',
           {
@@ -94,8 +89,9 @@ $(window).load(function() {
             mensaje : mensaje,
           },
           function(data, status){
-              alert("Data: " + data + "\nStatus: " + status);
-              console.log(data);
+              
+              alert("Mensaje enviado con Exito !")
+            
           }
         );
 

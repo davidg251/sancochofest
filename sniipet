@@ -1,0 +1,38 @@
+   <div id="escuela" class=" black-text">
+        
+
+        <div class="row row-nomargin">
+         
+
+        <div class="col l7">
+          <div class="row">
+           <h2 class="header center-align text-grey-darken-4">ESCUELA DEL SANCOCHO</h2>
+          </div>
+
+
+          <div class="row row-memorias">
+           
+           
+            <p class="flow-text center-align text-grey-darken-4 ">
+                Festival Multicultural que cada año reúne artistas,
+                expositores y tallerístas nacionales e
+                internacionales, para ofrecer a la
+                comunidad de Tuluá y sus alrededores un
+                espacio multiartístico de esparcimiento y
+                entretenimiento
+                que,
+                de
+                manera
+                simultanea, se alterna con espacios de
+                educación informal en los temas de interés
+                           
+            </p>
+         
+          </div>
+        </div>
+
+         <div class="col l5 m12 s12 escuelaimg">
+            
+          </div>
+        </div>
+    </div>

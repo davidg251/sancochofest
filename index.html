@@ -8,218 +8,410 @@
     <meta name="description" content="El Sancocho Fest es un espacio multiartístico y cultural en el que convergen diversas expresiones que pueden ser apreciadas por el público de manera gratuita">
     <meta name="keywords" content="sancocho fest,festival,multicultural,tulua, valle del cauca, musica">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
-    <link type="text/css" rel="stylesheet" href="lib/slick/slick.css">
-    <link type="text/css" rel="stylesheet" href="lib/slick/slick-theme.css">
-    <!--<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>-->
-    <link type="text/css" rel="stylesheet" href="css/estilos.min.css/materialize.css"  media="screen,projection"/>
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
-
-    <link type="text/css" rel="stylesheet" href="css/app.css">
-    <style>.spinner{width: 60px;height: 60px;margin: 25% auto;margin-bottom: 0;background-color:orange;z-index: 999;border-radius: 100%;-webkit-animation: sk-scaleout 1.0s infinite ease-in-out;animation: sk-scaleout 1.0s infinite ease-in-out;}
-  @-webkit-keyframes sk-scaleout {0% { -webkit-transform: scale(0) }100% {-webkit-transform: scale(1.0);opacity: 0;}}
-@keyframes sk-scaleout {0% {-webkit-transform: scale(0);transform: scale(0);} 100% {-webkit-transform: scale(1.0);transform: scale(1.0);opacity: 0;}}
+    <link type="text/css" rel="stylesheet" href="lib/slick/slick-all.min.css">
+    <meta property="og:title" content="Sancocho Fest 2016" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.sancochofest.co/" />
+    <meta property="og:image" content="http://www.sancochofest.co/img/afiche.png" />
+    <link type="text/css" rel="stylesheet" href="css/styles.min.css">
+    <style>.spinner{width:60px;height:60px;margin:25% auto 0;background-color:orange;z-index:999;border-radius:100%;-webkit-animation:sk-scaleout 1s infinite ease-in-out;animation:sk-scaleout 1s infinite ease-in-out}@-webkit-keyframes sk-scaleout{0%{-webkit-transform:scale(0)}100%{-webkit-transform:scale(1);opacity:0}}@keyframes sk-scaleout{0%{-webkit-transform:scale(0);transform:scale(0)}100%{-webkit-transform:scale(1);transform:scale(1);opacity:0}}
     </style>
+  
   </head>
   
-
-  <div class="loader" style="z-index: 999;width: 100%;height: 100%;background:#fafafa;position: fixed;"><div class="spinner"></div><div style="width:80px;font-size:1.5rem;z-index: 999;color:#212121;margin: 0 auto;">...CARGANDO...</div></div>
-  
+  <!-- loader -->
+  <div class="loader" style="z-index: 999;width: 100%;height: 100%;background:#fafafa;position: fixed;"><div class="spinner"></div><div style="width:80px;font-size:1rem;z-index: 999;color:#212121;margin: 0 auto;">...CARGANDO...</div></div>
+  <!-- end loader -->
 
   <body>
     <main>
-      <!--menu estatico inicio-->
+      <!--static menu begin-->
       <div class="navbar-fixed">
-        <nav id="menu" class="cabecera  enlaces-trans">
+        <nav id="menu" class="cabecera">
           <div class="cabecera nav-wrapper">
 
-              <a href="#" data-activates="mobil" class="button-collapse">&#9776; </a>
+              <a href="#" data-activates="mobil" class="button-collapse"><img class="menu" alt="menu" src="img/menu.svg"/> </a>
                 
-                <div class="proteccion valign-wrapper">
-                  <!--<a class="hide-on-med-and-down"><img id="logo2" class="invisible logo2 left" src="img/logo2.png"/></a>-->
-                   <ul id="menugrande" class=" valign hide-on-med-and-down">
-                      <li id="logo" ><a class="item-menu"><img class="logo responsive-img" src="img/logoBlanco.PNG"/></a></li>
-                      
-                      <li><a class="item-menu" href="#fest2016">LINEUP</a></li>
-                      <li><a class="item-menu" href="#quesomos">QUE SOMOS</a></li>
-                      <li><a class="item-menu"  href="/memorias.html">MEMORIAS</a></li>
-                      <li><a class="item-menu" href="/contacto.html">CONTACTO</a></li>
-                  </ul>
-                </div>
+              <div class="proteccion valign-wrapper">
+                <ul id="bigmenu" class=" valign hide-on-med-and-down">
+                    <li id="logo" ><a class="item-menu"><img class="logo responsive-img" src="img/logoBlanco.PNG"/></a></li>
+                    <li><a class="item-menu" href="#sancocho">QUE SOMOS</a></li>
+                    <li><a class="item-menu" href="#escuela">ESCUELA</a></li>
+                    <li><a class="item-menu" href="#sponsors">SPONSORS</a></li>
+                    <li><a class="item-menu" href="#contacto">CONTACTO</a></li>
+                </ul>
+              </div>
 
               <ul class="side-nav" id="mobil">
+                <li>MENU</li>
                 <li><a href="#home">INICIO</a></li>
-                <li><a href="#fest2016">LINEUP</a></li>
-                <li><a href="#quesomos">QUE SOMOS</a></li>
-                <li><a href="/memorias.html">MEMORIAS</a></li>
-                <li><a href="/contacto.html">CONTACTO</a></li>
+                <li><a href="#sancocho">QUE SOMOS</a></li>
+                <li><a href="#escuela">ESCUELA</a></li>
+                <li><a href="#sponsors">SPONSORS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
               </ul>
+          
           </div>
         </nav>
       </div>
-      <!--menu estatico fin-->
+      <!--static menu end-->
 
-      <!-- home inicio -->
-      <div id="home" class="">
-        <div class="">
+      <!-- home begin -->
+      <div id="home">
+
           <div class="slider">
             
             <ul class="slides">
               
               <li>
-                  <img src="img/slide1.jpg"> 
+                  <img alt="slide1" src="img/slide1.jpg"> 
                   <div class="caption right-align">
-                    <h1  class="joda "><span class=" ">FALTAN MUY POCOS DIAS PA'L SANCOCHO</span></h1>
-                    <h5 class="light grey-text text-lighten-3 hide-on-small-only line-up ">MIMI CAMELUSA(ARG) / RAFAEL PONDE(BR) / Ryan Tennis(USA) / Open Mind Groove(COL) / Sólo Valencia(COL) / Petit Felas(COL) / El CaribeFunk(COL)</h5>
+                    <h1  class="titulos">FALTA MUY POCO PA'L SANCOCHO </span></h1>
+                    <p class="flow-text line-up"> RAFAEL PONDE(BR) /  the pelos (arg)/ Ryan Tennis(USA) / Open Mind Groove(COL)/ El CaribeFunk(COL) / de tierra caliente (USA)/ pedro rock(col) / Ophir (COL) / mimi camelusa(ARG)
+                    </p>
                   </div>
     
-               </li>
+              </li>
 
-               <li>
-                  <img src="img/slide2.jpg"> <!-- random image -->
+              <li>
+                  <img alt="slide2" src="img/slide2.jpg"> 
                   <div class="caption left-align">
-                    <h1 class=" "><span class=" ">ESCUELA DEL SANCOCHO</span></h1>
-                    <h5 class="light grey-text text-lighten-3 hide-on-small-only  ">Una forma de acercamos de una manera directa a la
-población incorporando nuevas formas de compartir saberes mediante
-talleres, clínicas artísticas y conversatorios</h5>
+                    <h1 class="titulos">LA ESCUELA DEL SANCOCHO</span></h1>
+                    <p class="light grey-text text-lighten-3  flow-text ">Vamos #Palaescuela, este año se han dispuesto 23 espacios de educación no formal entre talleres, conferencias y conversatorios abiertos al público, las inscripciones ya están abiertas!
+                    </p>
                   </div>
               
               </li>
-        
-              <li>
-                <img src="img/slide3.jpg"> <!-- random image -->
-                <div class="caption center-align">
-                  <h1><span class=" ">¿ QUE ES EL SANCOCHO ?</span></h1>
-                   <h5 class="light white-text hide-on-small-only ">Cada año, el Sancocho Fest reúne artistas,
-        expositores y tallerístas nacionales e
-        internacionales, para ofrecer a la
-        comunidad de Tuluá y sus alrededores un
-        espacio multiartístico de esparcimiento y
-        entretenimiento</h5>
-                </div>
-              </li>
+
             </ul>
           </div>
-        </div>
+        
       </div>
-      <!-- home fin-->
+      <!-- home end-->
 
-     <div id="fest2016" class="seccion white-text">
+      <!-- sancocho begin-->
+      <div id="sancocho" class="seccion purpura white-text">
          <div class="row container contenido">
            <div class="col l12 m12 s12">
             <div class="row">
-              <h2 class="header left">LINE UP</h2>
+              
+              <h2 class="header center-align">EL SANCOCHO FEST</h2>
+           
+            </div>
+         
+              <p class="container flow-text center-align white-text ">
+                
+              SANCOCHO FEST surge como un llamado a la
+              tolerancia y al respeto en nuestra ciudad, utilizando el arte
+              como herramienta de mediación, discusión y comprensión.
+              En general, este proyecto consiste en crear un espacio intercultural en Tuluá, en el que la música y otras corrientes
+              artísticas confluyan para gritar en una sola voz: ¡No más violencia!
+              Con este festival se darán a conocer múltiples propuestas
+              estéticas y artísticas que susciten el crecimiento cultural de
+              nuestra región, y al mismo tiempo promuevan la inclusión social.
+                           
+            </p>
+
+         </div>
+        </div>
+      </div>
+      <!-- sancocho end-->
+
+      <!-- lineup begin-->
+     <div class="seccion purpura white-text">
+         <div class="row container contenido">
+           <div class="col l12 m12 s12">
+            <div class="row">
+              <h2 class="header center-align">LINE UP**</h2>
             </div>
             <div class="programacionfest container">
+              
               <div class="row">
-                <h3 class="center-align">Dia 1 /Viernes Febrero 5</h3>
+                <h4 class="center-align">DIA 1 (VIERNES 5 FEBRERO)</h4>
                   <div class="container">
                     <p class="center-align line-up flow-text">
-                      Evento 1 hora<span class="separator"></span>
-                      Evento 2 hora2  <span class="separator"></span>
-                      Evento escuela hora3  <span class="separator"></span>
-                      Evento hora4<span class="separator"></span>
-                      Evento hora5 <span class="separator"></span>
-                      Evento escuela hora4  <span class="separator"></span>
-                    </p>
-                  </div>
+                      Caribefunk<span class="separator-white"></span>
+                      Diego Alejandro(LA VOZ KIDS)<span class="separator-white"></span>
+                      Mr Demian<span class="separator-white"></span>
+                      The Pelos<span class="separator-white"></span>
+                      Crazy Horses<span class="separator-white"></span>
+                      Ryan Tennis                    
+                    </p>      
+                    </div>
+                  
+              </div>
+
+              <div class="row">
+                <h4 class="center-align">DIA 2 (SABADO 6 FEBRERO)</h4>
+                  <div class="container">
+                    <p class="center-align line-up flow-text">
+                      Akeena<span class="separator-white"></span>
+                      Malamute<span class="separator-white"></span>
+                      
+                      Helicon<span class="separator-white"></span>
+                      Che parce<span class="separator-white"></span>
+                      Changua Circo<span class="separator-white"></span>
+                      Open Mind groove<span class="separator-white"></span>
+                     
+                      Pedro Rock<span class="separator-white"></span>
+                      Porrosivo ensamble<span class="separator-white"></span>
+                      Sound Land<span class="separator-white"></span>
+                      Caribefunk<span class="separator-white"></span>
+                      
+                      Palo Mestizo<span class="separator-white"></span>
+                      De tierra caliente
+                    </p>      
+                    </div>
+                  
               </div>
               
               <div class="row">
-                <h3 class="center-align">Dia 2 /Sabado Febrero 6</h3>
+                <h4 class="center-align">DIA 3 (DOMINGO 7 FEBRERO)</h4>
                   <div class="container">
-                    <p class="center-align flow-text">
-                      Evento 1 hora<span class="separator"></span>
-                      Evento 2 hora2  <span class="separator"></span>
-                      Evento escuela hora3  <span class="separator"></span>
-                      Evento hora4<span class="separator"></span>
-                      Evento hora5 <span class="separator"></span>
-                      Evento escuela hora4  <span class="separator"></span>
+                    <p class="center-align line-up flow-text">
+                          Azkaban<span class="separator-white"></span>
+                          Gato Azul<span class="separator-white"></span>
+                          Aguapanela cosmica<span class="separator-white"></span>
+                          Cuarteto Vocal<span class="separator-white"></span>
+                          Raices Pacifico<span class="separator-white"></span>
+                          Rafael Ponde<span class="separator-white"></span>
+                          Ophir<span class="separator-white"></span>
+                          Mimi Camelusa<span class="separator-white"></span>
+                          Black Demon y el Kofla<span class="separator-white"></span>
+                          Proyecto Palenque
+                          
                     </p>
                   </div>
               </div>
-              <div class="row">
-                <h3 class="center-align">Dia 3 /Domingo Febrero 7</h3>
-                  <div class="container">
-                  <p class="center-align flow-text">
 
-                      Evento 1 hora<span class="separator"></span>
-                      Evento 2 hora2  <span class="separator"></span>
-                      Evento escuela hora3  <span class="separator"></span>
-                      Evento hora4<span class="separator"></span>
-                      Evento hora5 <span class="separator"></span>
-                      Evento escuela hora4  <span class="separator"></span>
-                  </p>
-                  </div>
-              </div>
-            
+              
             </div>
           
 
          </div>
-         <a class="btn btn-flat right">Descargar Programacion</a>
+         <a href="programacion.pdf" target="_blank" class="btn btn-flat right">Ver Programacion Completa</a>
+          <p>**sujeto a cambios</p>
        </div>
-
-
       </div>
-
-
-     <div id="quesomos" class="seccion black-text">
-       <div class="row container contenido">
-         <div class="row">
-         <h2 class="header right text-grey-darken-4">QUE ES LO QUE SOMOO PAPII</h2>
-        </div>
-
-
-         <div class="row row-memorias">
-         <p class="flow-text text-grey-darken-4">
-         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-           
-         </p>
-
-        </div>
-      </div>
+       <!-- lineup end-->
+  
+    
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/parallax2.jpg"></div>
     </div>
 
-    <div id="sponsors" class="seccion white black-text">
+
+     <!-- escuela begin-->    
+    <div id="escuela" class=" mostaza text-grey-darken-4">
+        <div class="row  row-nomargin container">
+            <div class="col l12">
+              <div class="row">
+               <h2 class="header center-align ">ESCUELA DEL SANCOCHO</h2>
+              </div>
+          <div class="row row-memorias">
+            <p class="flow-text center-align text-grey-darken-4 ">
+            ESCUELA DEL SANCOCHO es un espacio físico y mental que nace hace dos años en el marco de la segunda edición del Sancocho Fest- en parte como una reacción a nuestro sistema educativo y las políticas publicas que poco favorecen la integración social. 
+            Esta idea nace a partir de la necesidad de poner en dialogo nuestras diferentes lecturas de la vida y la realidad misma, donde la ausencia de estado a dejando una secuela imborrable para nuestra buena memoria. Es por eso que en el SANCOCHO FEST seguimos apostando a la difusión de saberes, tratando de construir en equipo un pensamiento critico frente a nuestro entorno, buscando relacionarnos con diferentes propuestas locales que creemos indispensable para el crecimiento de nuestra sociedad tulueña.
+                           
+            </p>
+         
+          </div>
+        </div>
+
+      </div>
+    </div>
+     <!-- escuela end--> 
+
+
+
+      <!--lienup escuela begin--> 
+     <div class="seccion mostaza text-grey-darken-4">
+         <div class="row container contenido">
+           <div class="col l12 m12 s12">
+            <div class="row">
+              <h2 class="header center-align">TALLERES ESCUELA**</h2>
+            </div>
+            <div class="programacionescuela container">
+              
+              <div class="row">
+                <h4 class="center-align">DIA 1 (SABADO FEBRERO 6)</h4>
+                  <div class="container">
+              
+                    <p class="center-align flow-text ">
+                     
+                      Taller de Ilustración <span class="separator"></span>  
+                      Canabis medicinal y usos alternativos <span class="separator"></span>
+                      Modelos de desarrollo y la COP 21  <span class="separator"></span>
+                      Hablemos de Festivales y Politicas culturales  <span class="separator"></span>
+                      Experiencias externas<span class="separator"></span> 
+                      Ruralidad actual en el valle del cauca  y las posibilidades de un post acuerdo <span class="separator"></span> 
+                      Taller de tambor, ritmos y fusiones  <span class="separator"></span> 
+                      Apreciación del cine - Lenguaje del cine <span class="separator"></span>
+                      Lanzamiento  de Obra de  títeres <span class="separator"></span>   
+                      Creatividad, imaginacion  <span class="separator"></span>
+                      Foro Documental   "cuando el chucu chucu se vistio de Frac"  <span class="separator"></span>
+                      Mas allá de la sanacion 
+                      
+                    </p>
+         
+                  </div>
+              </div>
+              
+              <div class="row">
+                <h4 class="center-align">DIA 2 (DOMINGO FEBRERO 7)</h4>
+                  <div class="container">
+                    <p class="center-align flow-text">
+                          Movimientos del cuerpo para sanar el alma<span class="separator"></span>
+                          Taller de musica popular argentina<span class="separator"></span>
+                          Conversatorio Animalista<span class="separator"></span>
+                          Huertas urbanas<span class="separator"></span>
+                          Taller de Ilustracion(continuacion)<span class="separator"></span>
+                          Teatro para ninos<span class="separator"></span>
+                          Teatro del oprimido<span class="separator"></span>
+                          Ritmos Brasileños                         
+                    </p>
+                  </div>
+              </div>
+
+             
+            </div>
+          
+
+         </div>
+         <a href="programacion.pdf" target="_blank" class="btn btn-dark btn-flat right">Ver Programacion Completa</a>
+          <p>**sujeto a cambios</p>
+       </div>
+    </div>
+    <!--lienup escuela end--> 
+
+    <!--sponsors begin--> 
+    <div id="sponsors" class="seccion  white black-text">
       <div class="row-sponsors container contenido ">
         <div class="row">
-        <h2 class="header  left text-grey-darken-4">SPONSORS</h2>
-      </div>
-        <div class="row">
-         <div class="col l3 m3 s4"><img class="responsive-img"  src="img/sponsors/1.jpg"></div>
-         <div class="col l3 m3 s4"><img  class="responsive-img" src="img/sponsors/2.jpg"></div>
-         <div class="col l3 m3 s4"><img class="responsive-img"  src="img/sponsors/3.jpg"></div>
-         <div class="col l3 m3 s4"><img  class="responsive-img" src="img/sponsors/4.jpg"></div>
+          <h2 class="header center-align text-grey-darken-4">SPONSORS</h2>
         </div>
-        <div class="row">
-          <div class="col l2 m2 s3"><img class="responsive-img"  src="img/sponsors/5.jpg"></div>
-          <div class="col l2 m2 s3"><img  class="responsive-img" src="img/sponsors/6.jpg"></div>
-          <div class="col l2 m2 s3"><img class="responsive-img"  src="img/sponsors/7.jpg"></div>
-          <div class="col l2 m2 s3"><img  class="responsive-img" src="img/sponsors/8.jpg"></div>
-          <div class="col l2 m2 s3"><img  class="responsive-img" src="img/sponsors/9.jpg"></div>
-          <div class="col l2 m2 s3"><img  class="responsive-img" src="img/sponsors/10.jpg"></div>
 
+        <div class="row">
+         <div class="col l2 m2 s2"><img  alt="alcaldia" class="responsive-img"  src="img/sponsors/alcaldia.JPG"></div>
+         <div class="col l2 m2 s2"><img  alt="psc"  class="responsive-img" src="img/sponsors/psc.png"></div>
+         <div class="col l2 m2 s2"><img  alt="camaracomercio" class="responsive-img"  src="img/sponsors/camaracomercio.jpg"></div>
+         <div class="col l2 m2 s2"><img  alt="provj"  class="responsive-img" src="img/sponsors/provj.png"></div>
+         <div class="col l2 m2 s2"><img  alt="innovation"  class="responsive-img" src="img/sponsors/innovation.png"></div>
+         <div class="col l2 m2 s2"><img  alt="decada"  class="responsive-img" src="img/sponsors/decada.jpg"></div>
         </div>
-        <div class="center-align row">
-          <h4 class="">AGRADECIMIENTOS</h4>
-          <p class="">Alcaldia de Tulua - Secretaria de Cultura - Colectivo Pata.com- Huerta Rebelde</p>
+
+        <div class="row">
+         <div class="col l2 m2 s2"><img  alt="mundo" class="responsive-img"  src="img/sponsors/mundo.png"></div>
+         <div class="col l2 m2 s2"><img  alt="tuluaguia"  class="responsive-img" src="img/sponsors/tuluaguia.png"></div>
+         <div class="col l2 m2 s2"><img  alt="revistalea" class="responsive-img"  src="img/sponsors/lea.png"></div>
+         <div class="col l2 m2 s2"><img  alt="webcloster"  class="responsive-img" src="img/sponsors/webcloster.png"></div>
+         <div class="col l2 m2 s2"><img  alt="tampikofilms" class="responsive-img"  src="img/sponsors/tampiko.png"></div>
+         <div class="col l2 m2 s2"><img  alt="nuestraradioonline"  class="responsive-img" src="img/sponsors/radioonline.png"></div>
+        </div>
+
+        <div class="row">
+          
+          <div class="col l2 m2 s2"><img  alt="trebol"  class="responsive-img" src="img/sponsors/eltrebol.jpg"></div>
+          <div class="col l2 m2 s2"><img  alt="gea"  class="responsive-img" src="img/sponsors/gea.png"></div>
+          <div class="col l2 m2 s2"><img  alt="queality"  class="responsive-img" src="img/sponsors/quality.png"></div>
+          <div class="col l2 m2 s2"><img  alt="centroaguas"  class="responsive-img" src="img/sponsors/centroaguas.jpg"></div>
+          <div class="col l2 m2 s2"><img  alt="almavago"  class="responsive-img" src="img/sponsors/almavago.png"></div>
+           <div class="col l2 m2 s2"><img  alt="lacomarca"  class="responsive-img" src="img/sponsors/lacomarca.jpg"></div>
+        </div>
+        
+        <div class="row">
+          
+          <div class="col offset-l3 l2 m2 s2"><img  alt="talento"  class="responsive-img" src="img/sponsors/talento.jpg"></div>
+          <div class="col l2 m2 s2"><img  alt="natalialeal"  class="responsive-img" src="img/sponsors/natalialeal.jpg"></div>
+          <div class="col l2 m2 s2"><img  alt="huerta"  class="responsive-img" src="img/sponsors/huerta.jpg"></div>
+         
         </div>
       </div>
     </div>
+    <!--sponsors end--> 
 
+   <div id="contacto" class="purpura seccion white-text">
+     <div class="container ">
+       <div class="row contenido">
+         
+        <div class="col l6 m6 s12">
+          <h5 class="header">ORGANIZADO POR:</h5>
+          <p>
+                <img style="width:100px;" alt="escuelasancocho" class="responsive-img" src="img/escuela.png"/>
+                <img style="width:80px;" alt="casadetodos" class="responsive-img" src="img/casadetodos.png"/>
+              
+          </p>
+
+          <p>
+            <ul style="display:inline;">
+            <li><h6>SIGUENOS EN:</h6></li>
+            <li><a target="_blank" href="https://www.facebook.com/sancochofest">Facebook </a></li>
+            <li><a target="_blank" href="https://twitter.com/festsancocho">Twitter</a> </li>
+            <li><a target="_blank" href="https://www.youtube.com/channel/UCbqtA3pkeHviJpVEdyZ9Mkw">Youtube</a></li>
+            <li><a target="_blank" href="https://www.instagram.com/sancochofest/">Instagram</a></li>
+          </ul>
+          </p>
+
+        </div>
+
+       <div class="col l6 m6 s12">
+         <div  class="valign-wrapper">
+                <div  class="valign">
+                   <div class="card-content black-text">
+                     
+                     <div id="error" class="hide red chip white-text">
+                       FORMULARIO INCOMPLETO
+                      </div>
+                     
+                   <div class="row">
+                       <h5 class="white-text header">CONTACTANOS</h5>
+                       <div class="input-field col m6 s6 l6">
+
+                         <input   id="nombre" type="text" class="validate">
+                         <label for="nombre">Nombre*</label>
+                       </div>
+                       <div class="input-field col s6 l6 m6">
+                         <input  id="correo" type="email" class="validate">
+                         <label for="correo">Correo*</label>
+                       </div>
+                 </div>
+                 <div class="row">
+                   <div class="input-field col s12 m12 s12">
+                       <textarea  id="mensaje" type="text" class="validate materialize-textarea"></textarea>
+                       <label for="mensaje">Mensaje*</label>
+                   </div>
+                 </div>
+                   <button id="enviar-formulario" class=" btn btn-flat">Enviar</button>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <footer class="transparent  page-footer">
+         
+          <div class="transparent  footer-copyright">
+            <div class="container">
+            © 2016 Asociacion Montando la Podrida
+            <a class="  right" href="#!">Diseñado por colectivo Pata.com</a>
+            </div>
+          </div>
+        </footer>
+    </div>
+    <!--contacto end--> 
 
     <div class="logos-social">
       <ul>
-        <li><a target="_blank" href="http://twitter.com"><img src="img/T.png"/></a></li>
-        <li><a target="_blank" href="http://youtube.com"><img src="img/I.png"/></a></li> 
-        <li><a target="_blank" href="http://facebook.com"><img src="img/F.png"/></a></li>
-      </ul>
+        <li><a target="_blank" href="https://www.facebook.com/sancochofest"><img src="img/F.png"/></a></li>
+        <li><a target="_blank" href="https://twitter.com/festsancocho"><img src="img/T.png"/></a></li>
+        <li><a target="_blank" href="https://www.instagram.com/sancochofest/"><img src="img/I.png"/></a></li> 
+        </ul>
     </div>
     </main>
     
-   <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+   <script type="text/javascript" src="lib/jquery/jquery-2.1.4.min.js"></script>
    <script type="text/javascript" src="lib/slick/slick.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/app.min.js"></script>
   </body>
 </html>

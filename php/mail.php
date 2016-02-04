@@ -6,16 +6,16 @@ if(isset($_POST['nombre']) && isset($_POST['correo']) && isset($_POST['mensaje']
 $nombre =  $_POST['nombre'];
 $correo =  $_POST['correo'];
 $mensaje = $_POST['mensaje'];
-$para   = 'david@sancochofest.co';
+$para   = 'info@sancochofest.co';
 
 
 /**/
-$cabeceras = 'From:'. $correo . "\r\n" .
-    'Reply-To: david@sancochofest.co' . "\r\n" .
+$cabecera = 'From:'. $correo . "\r\n" .
+    'Reply-To: ' .$correo. "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 
-mail($para, $nombre, $mensaje, $cabeceras);
+mail($para, $nombre, $mensaje, $cabecera);
 }
 
 ?>
